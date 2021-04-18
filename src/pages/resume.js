@@ -1,62 +1,67 @@
+import React, {useState} from 'react'
 
-import React from 'react'
-import { Main, Home} from '../styles/buyIsland';
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { normalize } from "styled-normalize";
-import {Link} from "gatsby";
+//styled Component
+import {
+	Main,
+	Download
+} from '../styles/resumeStyles';
+
+//context
+import {useGlobalStateContext, useGlobalDispatchContext} from '../context/globalContext'
+
+//layout
+import Layout from "../components/layout"
+
+//pdf
+import resume from '../assets/document/resume.pdf';
+import { Document, Page, pdfjs   } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
-import testDoc from '../assets/document/resume.pdf';
-import { Document } from "react-pdf";
+const Resume = () => {
 
+	const {currentTheme, cursorStyles} = useGlobalStateContext()
+	const dispatch = useGlobalDispatchContext()
 
-
-const GlobalStyle = createGlobalStyle`
-
-	//html, body {
-	//	height: 100%;
-	//}
-	
-	${normalize}
-	* {
-		text-decoration: none;
+	const onCursor = cursorType => {
+		cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
+		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	}
 
-	html {
-		box-sizing: border-box;
-		-webkit-font-smoothing: antialised;
-		font-size: 16px
+	const [numPages, setNumPages] = useState(null);
+  
+	function onDocumentLoadSuccess({ numPages }) {
+	  setNumPages(numPages);
 	}
-	
-
-	body {
-		
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		background : #F5E9E2;
-		overscroll-behavior: none;
-		overflow-x: hidden
-	}
-`
-
-const Buy = () => {
-
+  
 	return (
-		<div>
-			<GlobalStyle />
+	<div>
+		<Layout>
 			<Main>
-				<Document file={testDoc}/>
-				<h2>
-					<a href="https://www.nzsothebysrealty.com/purchasing/property/NEL00334/pepin-island-875-cable-bay-road-nelson/">Just Buy the island</a>
-				</h2>
+				<Document
+					file={resume}
+					onLoadSuccess={onDocumentLoadSuccess}
+				>
+					<Page pageNumber={1} />
+				</Document>
 			</Main>
-			<Home>
-				<Link to='/'>
-					FL<span />RIANNE
-				</Link>	
-			</Home>
-		</div>
-
-	)
+			<Download>
+				<a href={resume} download="Florianne_Coudert.pdf">
+					<button
+						href={resume} download="Florianne_Coudert.pdf"
+						onMouseEnter={() => onCursor("pointer")}
+						onMouseLeave={onCursor}
+					>
+						<a href={resume} download="Florianne_Coudert.pdf"></a>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M12 21l-8-9h6v-12h4v12h6l-8 9zm9-1v2h-18v-2h-2v4h22v-4h-2z"/>
+						</svg>
+					</button>
+				</a>
+			</Download>
+		</Layout>
+	</div>
+	);
 }
 
-export default Buy
+export default Resume

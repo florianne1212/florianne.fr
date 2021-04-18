@@ -19,19 +19,19 @@ const navRoutes = [
 	{
 		id: 0,
 		title: 'my resume',
-		path:'/buy-island',
+		path:'resume',
 		video: "pepin-fresh.mp4",
 	},
 	{
 		id: 1,
 		title: 'my personnal projects',
-		path:'/bleeping-easy',
+		path:'myprojects',
 		video: "pepin-bathtub.mp4",
 	},
 	{
 		id: 2,
 		title: 'my school projects',
-		path:'/make-it-zero',
+		path:'42projects',
 		video: "pepin-nelson.mp4",
 	},
 	// {
@@ -72,7 +72,7 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 							<Container>
 								<NavHeader>
 									<Flex spaceBetween noHeight>
-										<h2>Why Pepin Island ?</h2>
+										<h2>Why should you hire me ?</h2>
 										<CloseNav 
 											onClick={() => setToggleMenu(!toggleMenu)}
 											onMouseEnter={() => onCursor("pointer")}
@@ -107,7 +107,7 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 													})
 												}
 											>
-												<Link to={`/resume`}>
+												<Link to={`/${route.path}`}>
 													<motion.div 
 														initial={{ x: -108}}
 														whileHover={{ x: -40, 
@@ -139,30 +139,6 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 									</ul>
 								</NavList>
 								<NavFooter></NavFooter>
-								<NavVideo>
-									<motion.div
-										animate={{width: revealVideo.show ? 0 : '100%'}}
-										className="reveal"
-									></motion.div>
-									<div className="video">
-										<AnimatePresence initial={false} exitBeforeEnter>
-											<motion.video
-												key={revealVideo.key}
-												src={require(`../assets/video/${revealVideo.video}`).default}
-												initial={{opacity: 0}}
-												exit={{opacity: 0}}
-												animate={{opacity: 1}}
-												transition={{
-													duration: 0.2,
-													ease: "easeInOut",
-												}}
-												loop
-												autoPlay
-												muted
-											></motion.video>
-										</AnimatePresence>
-									</div>
-								</NavVideo>
 							</Container>
 						</Nav>
 				)}

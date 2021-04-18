@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 import { Helmet } from "react-helmet"
-import Layout from "../../components/layout"
+import LayoutFR from "../../components/French/layout_fr"
 
 //context
 
@@ -35,10 +35,10 @@ const IndexPage = props => {
 				<title>Florianne</title>
 			</Helmet>
 
-			<Layout>
+			<LayoutFR>
 				<HomeBanner onCursor={onCursor} />
 				<HomeContent />
-			</Layout>
+			</LayoutFR>
             <button>TEST</button>
 		</div>
 	);

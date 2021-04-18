@@ -4,7 +4,6 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/home/user42/florianne.fr/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/home/user42/florianne.fr/src/pages/404.js")),
   "component---src-pages-42-projects-js": preferDefault(require("/home/user42/florianne.fr/src/pages/42projects.js")),
   "component---src-pages-french-index-fr-js": preferDefault(require("/home/user42/florianne.fr/src/pages/French/index_fr.js")),

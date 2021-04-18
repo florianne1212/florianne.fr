@@ -17,7 +17,7 @@ export const NavHeader = styled.div`
 	top: 72px;
 	position: relative;
 	h2 {
-		color: ${props => props.theme.blue};
+		color: ${props => props.theme.text};
 	}
 
 `
@@ -33,7 +33,7 @@ export const CloseNav = styled.div`
 			width:36px;
 			height: 8px;
 			display: block;
-			background: ${props => props.theme.blue};
+			background: ${props => props.theme.text};
 			margin: 8px;
 		}
 	}
@@ -55,7 +55,7 @@ export const NavList = styled.div`
 			line-height: 96px;
 			overflow: hidden;;
 			.link{
-				color: ${props => props.theme.blue};
+				color: ${props => props.theme.text};
 				position: relative;
 				display: flex;
 				align-items: center;
@@ -65,7 +65,7 @@ export const NavList = styled.div`
 					svg {
 						width: 100px;
 						path {
-							fill: ${props => props.theme.blue};
+							fill: ${props => props.theme.text};
 						}
 					}
 				}
@@ -75,7 +75,20 @@ export const NavList = styled.div`
 	}
 `
 
-export const NavFooter = styled.div``
+export const NavFooter = styled.div`
+  position: absolute;
+  z-index: 99999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 56px 0px;
+  p {
+    color: ${props => props.theme.text};
+  }
+  svg path {
+    fill: ${props => props.theme.text};
+  }
+`
 
 export const NavVideo = styled.div`
 	position: absolute;

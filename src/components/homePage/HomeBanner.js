@@ -1,12 +1,7 @@
 import React, { useEffect, useRef } from 'react'
-import Videotest from '../../assets/video/pepin-home.mp4'
 
 import {
 	Banner,
-	Video,
-	BannerTitle,
-	Canvas,
-	Headline,
 } from "../../styles/homeStyles"
 
 const HomeBanner = ({ onCursor }) => {

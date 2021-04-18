@@ -3,7 +3,9 @@ import React, {useState} from 'react'
 //styled Component
 import {
 	Main,
-	Download
+	Download,
+	ZoomIn,
+	ZoomOut
 } from '../styles/resumeStyles';
 
 //context
@@ -28,11 +30,18 @@ const Resume = () => {
 		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	}
 
-	const [numPages, setNumPages] = useState(null);
+	// const [numPages, setNumPages] = useState(null);
+	const [scale, setScale] = useState(1.0);
   
-	function onDocumentLoadSuccess({ numPages }) {
-	  setNumPages(numPages);
-	}
+	// function onDocumentLoadSuccess({ numPages }) {
+	//   setNumPages(numPages);
+	// }
+
+	// zoomIn = () => {
+	// 	this.setScale({
+	// 		scale: 2.0,
+	// 	});
+	// }
   
 	return (
 	<div>
@@ -40,9 +49,9 @@ const Resume = () => {
 			<Main>
 				<Document
 					file={resume}
-					onLoadSuccess={onDocumentLoadSuccess}
+					// onLoadSuccess={onDocumentLoadSuccess}
 				>
-					<Page pageNumber={1} />
+					<Page pageNumber={1} scale={scale}/>
 				</Document>
 			</Main>
 			<Download>
@@ -58,7 +67,30 @@ const Resume = () => {
 						</svg>
 					</button>
 				</a>
+				
 			</Download>
+			<ZoomIn>
+				<span
+					onClick={() => setScale(scale * 1.25)}
+					onMouseEnter={() => onCursor("pointer")}
+					onMouseLeave={onCursor}
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
+					</svg>
+				</span>
+			</ZoomIn>
+			<ZoomOut>
+				<span
+					onClick={() => setScale(scale * 0.75)}
+					onMouseEnter={() => onCursor("pointer")}
+					onMouseLeave={onCursor}
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M0 10h24v4h-24z"/>
+					</svg>
+				</span>
+			</ZoomOut>
 		</Layout>
 	</div>
 	);

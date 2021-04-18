@@ -45,7 +45,10 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
 						></span>
 						<Link to='/'>RIANNE</Link>	
 					</Logo>
-					<Menu onClick={() => setToggleMenu(!toggleMenu)}>
+					<Menu
+						onMouseEnter={() => onCursor("pointer")}
+						onMouseLeave={onCursor}
+						onClick={() => setToggleMenu(!toggleMenu)}>
 						<button>
 							<span></span>
 							<span></span>

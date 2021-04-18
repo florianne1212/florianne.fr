@@ -93,6 +93,7 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 											<motion.li 
 												onMouseEnter={() => onCursor("pointer")}
 												onMouseLeave={onCursor}
+												onClick={onCursor}
 												key={route.id}
 												onHoverStart={() => 
 													setRevealVideo({
@@ -146,10 +147,11 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 								<NavFooter>
 									<Flex spaceBetween>
 										<FooterContent>
-											<Link to={`French/index_fr`}>
+											<Link to={`/French/index_fr`}>
 												<p
 													onMouseEnter={() => onCursor("pointer")}
 													onMouseLeave={onCursor}
+													onClick={onCursor}
 												>
 													FR
 												</p>
@@ -160,6 +162,7 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 												<p
 													onMouseEnter={() => onCursor("pointer")}
 													onMouseLeave={onCursor}
+													onClick={onCursor}
 												>
 													EN
 												</p>

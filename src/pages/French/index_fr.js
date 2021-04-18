@@ -7,7 +7,7 @@ import LayoutFR from "../../components/French/layout_fr"
 import {useGlobalStateContext, useGlobalDispatchContext} from '../../context/globalContext'
 
 //components
-import HomeBanner from '../../components/homePage/HomeBanner'
+import HomeBannerFR from '../../components/French/HomeBanner_fr'
 import HomeContent from '../../components/homePage/HomeContent'
 
 
@@ -36,7 +36,7 @@ const IndexPage = props => {
 			</Helmet>
 
 			<LayoutFR>
-				<HomeBanner onCursor={onCursor} />
+				<HomeBannerFR onCursor={onCursor} />
 				<HomeContent />
 			</LayoutFR>
             <button>TEST</button>

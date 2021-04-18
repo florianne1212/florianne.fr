@@ -73,14 +73,14 @@ export const Cursor = styled.div `
 	z-index: 999;
 	&.pointer {
 		background: transparent !important;
-		width: 56px;
-		height: 56px;
+		width: 56px !important;
+		height: 56px !important;
 		border: 4px solid ${props => props.theme.text} !important;
 	}
 	&.hovered {
 		background: transparent !important;
-		width: 56px;
-		height: 56px;
+		width: 56px !important;
+		height: 56px !important;
 		border: 4px solid ${props => props.theme.blue};
 		/* &.pointer {
 			border: 4px solid ${props => props.theme.text};
@@ -88,5 +88,11 @@ export const Cursor = styled.div `
 	}
 	&.nav-open {
 		background: ${props => props.theme.text} ;
+	}
+	&.social {
+		background: transparent !important;
+		width: 100px ;
+		height: 100px ;
+		border: 4px solid ${props => props.theme.blue};
 	}
 `

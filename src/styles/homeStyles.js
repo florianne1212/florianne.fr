@@ -9,29 +9,6 @@ export const Banner = styled.div `
 	margin-bottom: 296px;
 `
 
-export const Video = styled.div `
-	height: 100%;
-	width: 100%;
-	video {
-		object-fit: cover;
-	}
-`
-export const Canvas = styled.canvas`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: block;
-`
-
-export const BannerTitle = styled(motion.h1) `
-	position: absolute;
-	bottom: -120px;
-	left: -18px;
-	color: ${props => props.theme.text};
-	pointer-events: none;
-`
-
 export const Headline = styled(motion.span) `
 	display: block;
 	font-size: 15rem;
@@ -46,11 +23,54 @@ export const HomeContentSection = styled(motion.div)`
 `
 
 export const Content = styled.h2`
+	margin-top: 210px;
 	width: 53%;
-	font-size: 2.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 124px;
+	margin-left: 400px;
 	color: ${props => props.theme.text};
+`
+
+export const GithubLink = styled.h2`
+	margin-top: 200px;
+	/* width: 53%; */
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-left: 0px;
+	color: ${props => props.theme.text};
+	svg {
+		width: 120px;
+		height: 80px;
+		/* display: block;
+		position: relative;
+		overflow: hidden; */
+		position: absolute;
+		top: 150px;
+		left: 150px;
+		width: 108px;
+		path {
+			fill: ${props => props.theme.text};
+		}
+	}
+`
+
+export const LinkedinLink = styled.h2`
+	margin-top: 200px;
+	/* width: 53%; */
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-left: 0px;
+	color: ${props => props.theme.text};
+	svg {
+		width: 120px;
+		height: 80px;
+		position: absolute;
+		left: 150px;
+		width: 108px;
+		path {
+			fill: ${props => props.theme.text};
+		}
+	}
 `
 
 export const HomeFeaturedSection = styled(motion.div) `

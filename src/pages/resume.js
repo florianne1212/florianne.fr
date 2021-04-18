@@ -15,7 +15,7 @@ import {useGlobalStateContext, useGlobalDispatchContext} from '../context/global
 import Layout from "../components/layout"
 
 //pdf
-import resume from '../assets/document/resume.pdf';
+import resume from '../assets/document/resume_en.pdf';
 import { Document, Page, pdfjs   } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -29,19 +29,7 @@ const Resume = () => {
 		cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
 		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	}
-
-	// const [numPages, setNumPages] = useState(null);
 	const [scale, setScale] = useState(1.0);
-  
-	// function onDocumentLoadSuccess({ numPages }) {
-	//   setNumPages(numPages);
-	// }
-
-	// zoomIn = () => {
-	// 	this.setScale({
-	// 		scale: 2.0,
-	// 	});
-	// }
   
 	return (
 	<div>
@@ -49,7 +37,6 @@ const Resume = () => {
 			<Main>
 				<Document
 					file={resume}
-					// onLoadSuccess={onDocumentLoadSuccess}
 				>
 					<Page pageNumber={1} scale={scale}/>
 				</Document>

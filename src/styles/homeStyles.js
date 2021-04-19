@@ -2,19 +2,16 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
  
 export const Banner = styled.div `
-	background: ${props => props.theme.background};
-	height: 100vh;
+	overflow: hidden;
+	/* display: inline-block; */
+	margin-top: 15%;
+	/* background: ${props => props.theme.background}; */
+	height: 50vh;
 	width: 100%;
-	position: relative;
-	margin-bottom: 296px;
+	/* position: relative; */
+	margin-bottom: 0px;
 `
 
-export const Headline = styled(motion.span) `
-	display: block;
-	font-size: 15rem;
-	font-weight: 900;
-	line-height: 0.76;
-`
 
 //content section
 
@@ -23,20 +20,24 @@ export const HomeContentSection = styled(motion.div)`
 `
 
 export const Content = styled.h2`
-	margin-top: 210px;
+	/* position:relative; */
+	display: inline-block;
+	/* margin-top: 100px; */
 	width: 53%;
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 400px;
+	margin-left: 150px;
 	color: ${props => props.theme.text};
 `
 
 export const GithubLink = styled.h2`
-	margin-top: 200px;
+	/* argin-top: 25vh;  */
 	/* width: 53%; */
+	display: inline-block;
+	margin-top: 210px;
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 0px;
+	margin-left: 100px;
 	color: ${props => props.theme.text};
 	svg {
 		width: 120px;
@@ -44,7 +45,7 @@ export const GithubLink = styled.h2`
 		/* display: block;
 		position: relative;
 		overflow: hidden; */
-		position: absolute;
+		/* position: relative; */
 		top: 150px;
 		left: 150px;
 		width: 108px;
@@ -55,16 +56,18 @@ export const GithubLink = styled.h2`
 `
 
 export const LinkedinLink = styled.h2`
-	margin-top: 200px;
+	/* margin-top:; */
 	/* width: 53%; */
+	/* margin-top: 310px; */
+	display: inline-block;
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 0px;
+	margin-left: 50px;
 	color: ${props => props.theme.text};
 	svg {
 		width: 120px;
 		height: 80px;
-		position: absolute;
+		/* position: relative; */
 		left: 150px;
 		width: 108px;
 		path {
@@ -84,11 +87,12 @@ export const HomeFeaturedSection = styled(motion.div) `
 `
 
 export const FeaturedContent = styled(motion.div) `
+	margin-top: 25%;
 	height: 480px;
 	width: 100%;
 	padding: 56px 124px;
 	box-sizing: border-box;
-	color: ${props => props.theme.text};
+	color: ${props => props.theme.blue};
 	h3 {
 		font-size: 1.4rem;
 	}
@@ -120,7 +124,7 @@ export const FeaturedContent = styled(motion.div) `
 			left: -48px;
 			width: 108px;
 			path {
-				fill: ${props => props.theme.text};
+				fill: ${props => props.theme.blue};
 			}
 		}
 	}
@@ -129,7 +133,9 @@ export const FeaturedContent = styled(motion.div) `
 export const FeaturedVideo = styled.div `
 	position: absolute;
 	z-index: -1;
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 110%;
 	height: 480px;
 	top: 0;
 	display: block;
@@ -171,4 +177,8 @@ export const FeaturedProjects = styled.div `
 			margin-top: 8px;
 		}
 	}
+`
+
+export const Title = styled.div `
+
 `

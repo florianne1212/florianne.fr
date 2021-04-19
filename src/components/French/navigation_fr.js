@@ -27,7 +27,7 @@ const navRoutes = [
 	{
 		id: 1,
 		title: 'mes projests personnels',
-		path:'myprojects',
+		path:'/French/myprojects',
 		video: "pepin-bathtub.mp4",
 	},
 	{
@@ -36,12 +36,12 @@ const navRoutes = [
 		path:'42projects',
 		video: "pepin-nelson.mp4",
 	},
-	// {
-	// 	id: 3,
-	// 	title: 'there are sheep',
-	// 	path:'/it-takes-an-island',
-	// 	video: "pepin-sheep.mp4",
-	// },
+	{
+		id: 3,
+		title: 'a propos de moi',
+		path:'/French/aboutme_fr',
+		video: "pepin-sheep.mp4",
+	},
 	// {
 	// 	id: 4,
 	// 	title: 'connected to the land',

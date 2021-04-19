@@ -36,12 +36,12 @@ const navRoutes = [
 		path:'42projects',
 		video: "pepin-nelson.mp4",
 	},
-	// {
-	// 	id: 3,
-	// 	title: 'there are sheep',
-	// 	path:'/it-takes-an-island',
-	// 	video: "pepin-sheep.mp4",
-	// },
+	{
+		id: 3,
+		title: 'about me',
+		path:'aboutme',
+		video: "pepin-sheep.mp4",
+	},
 	// {
 	// 	id: 4,
 	// 	title: 'connected to the land',

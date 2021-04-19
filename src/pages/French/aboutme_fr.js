@@ -71,8 +71,8 @@ const AboutMeFR = () => {
 					
 				<Content>
 					Je suis une étudiante à l'école 42 et une developpeuse web en devenir. <br />
-					A la suite de mon DUT Techniques de commercialisation et de mon DUETI à Budapest, J'ai décidé que je voulais apprendre de nouvelles choses et je suis parti étudier à l'école 42. <br />
-					Depuis j'ai apprit beaucoup de choses sur le code et sur moi. <br />
+					A la suite de mon DUT Techniques de commercialisation et de mon DUETI à Budapest, J'ai décidé que je voulais apprendre de nouvelles choses et je suis partie étudier à l'école 42. <br />
+					Depuis j'ai appris beaucoup de choses sur le code et sur moi. <br />
 				</Content>
 			</Banner>
 		</Layout>

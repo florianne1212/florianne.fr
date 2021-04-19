@@ -8,7 +8,7 @@ import {useGlobalStateContext, useGlobalDispatchContext} from '../../context/glo
 
 //components
 import HomeBannerFR from '../../components/French/HomeBanner_fr'
-import HomeContent from '../../components/homePage/HomeContent'
+import HomeFR from '../../components/French/Home_fr'
 
 
 const IndexPage = props => {
@@ -36,10 +36,8 @@ const IndexPage = props => {
 			</Helmet>
 
 			<LayoutFR>
-				<HomeBannerFR onCursor={onCursor} />
-				<HomeContent />
+				<HomeFR />
 			</LayoutFR>
-            <button>TEST</button>
 		</div>
 	);
 }

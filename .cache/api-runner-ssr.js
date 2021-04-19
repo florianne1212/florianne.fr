@@ -1,18 +1,18 @@
 var plugins = [{
       name: 'gatsby-plugin-styled-components',
-      plugin: require('/home/user42/florianne_projects/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/home/user42/florianne.fr/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"topLevelImportPaths":[],"pure":false},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/home/user42/florianne_projects/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/user42/florianne.fr/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/home/user42/florianne_projects/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/user42/florianne.fr/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"icon":"src/assets/icon/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"65294729c99ad320ede99d7e0a19c2ee"},
     },{
       name: 'default-site-plugin',
-      plugin: require('/home/user42/florianne_projects/gatsby-ssr'),
+      plugin: require('/home/user42/florianne.fr/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

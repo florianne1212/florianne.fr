@@ -95,20 +95,20 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 												onMouseLeave={onCursor}
 												onClick={onCursor}
 												key={route.id}
-												onHoverStart={() => 
-													setRevealVideo({
-														show: true,
-														video: route.video,
-														key: route.id,
-													})	
-												}
-												onHoverEnd={() => 
-													setRevealVideo({
-														show: false,
-														video: route.video,
-														key: route.id,
-													})
-												}
+												// onHoverStart={() => 
+												// 	setRevealVideo({
+												// 		show: true,
+												// 		video: route.video,
+												// 		key: route.id,
+												// 	})	
+												// }
+												// onHoverEnd={() => 
+												// 	setRevealVideo({
+												// 		show: false,
+												// 		video: route.video,
+												// 		key: route.id,
+												// 	})
+												// }
 											>
 												<Link to={`/${route.path}`}>
 													<motion.div 

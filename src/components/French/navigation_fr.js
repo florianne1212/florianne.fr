@@ -27,7 +27,7 @@ const navRoutes = [
 	{
 		id: 1,
 		title: 'mes projests personnels',
-		path:'/French/myprojects',
+		path:'/French/myprojects_fr',
 		video: "pepin-bathtub.mp4",
 	},
 	{
@@ -74,7 +74,7 @@ const NavigationFR = ({toggleMenu, setToggleMenu, onCursor}) => {
 							<Container>
 								<NavHeader>
 									<Flex spaceBetween noHeight>
-										<h2>Pourquoi m'enbaucher ?</h2>
+										<h2>Pourquoi m'embaucher ?</h2>
 										<CloseNav 
 											onClick={() => setToggleMenu(!toggleMenu)}
 											onMouseEnter={() => onCursor("pointer")}

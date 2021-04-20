@@ -69,10 +69,10 @@ const AboutMe = () => {
                 </a>
 
                 <Content>
-                    I am a student at school 42 and I am trying to become a front-end developer <br />
+                    I am a student at school 42 and I am trying to become a front-end developer. <br />
                     After my two year diploma in Marketing techniques and a year of study abroad in Budapest I've decided that I wanted to learn new things and I went to school 42. <br />
                     Since then I've learned a lot about coding and about myself. <br />
-                    The main thing I learned was that if I put the effort and the time into it I am capable to learn anything I want <br />
+                    The main thing I learned was that if I put the effort and the time into it I am capable to learn anything I want. <br />
                 </Content>
             </Banner>
         </Layout>

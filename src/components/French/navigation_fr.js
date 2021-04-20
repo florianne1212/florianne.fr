@@ -33,7 +33,7 @@ const navRoutes = [
 	{
 		id: 2,
 		title: 'mes projets a 42',
-		path:'42projects',
+		path:'/French/42projects_fr',
 		video: "pepin-nelson.mp4",
 	},
 	{

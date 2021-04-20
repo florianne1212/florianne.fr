@@ -9,7 +9,7 @@ import { normalize } from "styled-normalize";
 
 //components
 
-import Header from './../header'
+import HeaderFR from './header_fr'
 import Cursor from './../customCursor'
 import NavigationFR from './navigation_fr'
 
@@ -73,7 +73,7 @@ const LayoutFR = ({ children }) => {
 		<ThemeProvider theme={currentTheme === 'dark'? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<Cursor toggleMenu={toggleMenu} />
-			<Header 
+			<HeaderFR 
 				onCursor={onCursor}
 				toggleMenu={toggleMenu}
 				setToggleMenu={setToggleMenu}

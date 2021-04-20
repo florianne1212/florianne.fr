@@ -133,13 +133,16 @@ export const FeaturedContent = styled(motion.div) `
 export const FeaturedVideo = styled.div `
 	position: absolute;
 	z-index: -1;
-	margin-left: auto;
-	margin-right: auto;
+	/* margin-left: auto;
+	margin-right: auto; */
 	width: 110%;
 	height: 480px;
 	top: 0;
 	display: block;
 	overflow: hidden;
+	video {
+		width: 100%;
+	}
 `
 
 export const FeaturedProjects = styled.div `

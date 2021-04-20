@@ -15,23 +15,31 @@ line-height: 0.76;
 
 export const CUB3D = styled.h2`
 	/* position:relative; */
-	/* display: inline-block; */
+	display: flex;
 	margin-top: 100px;
-	width: 53%;
+	width: 70%;
 	font-size: 1.5rem;
 	font-weight: 400;
 	margin-left: 150px;
 	color: ${props => props.theme.text};
+	a{
+		align-self:center;
+	}
 `
 export const MINISHELL = styled.h2`
 	/* position:relative; */
 	/* display: inline-block; */
+	display: flex;
 	margin-top: 100px;
-	width: 53%;
+	width: 70%;
+	gap: 12px;
 	font-size: 1.5rem;
 	font-weight: 400;
 	margin-left: 150px;
 	color: ${props => props.theme.text};
+	a{
+		align-self:center;
+	}
 `
 
 
@@ -45,8 +53,14 @@ pointer-events: none;
 `
 
 export const PreviewVideo  = styled.h2`
-	height: 100px;
+	/* position: relative; */
+	/* height: 100px;*/
 	margin-top: 100px;
+	video {
+		width: 100% !important;
+		/* height: 400px; */
+	}
+	bottom: 0;
 	
 `
 
@@ -57,7 +71,7 @@ export const ContentComing = styled.h2`
 	width: 53%;
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 100px;
+	margin-left: 150px;
 	color: ${props => props.theme.text};
 	a:link {
 		color: ${props => props.theme.text};

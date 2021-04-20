@@ -48,7 +48,7 @@ const HomeFR = ({onCursor}) => {
 			}}
 		>
 			<Container>
-				<Link to={`/myprojects`}>
+				<Link to={`/French/myprojects_fr`}>
 					<FeaturedContent 
 						onHoverStart={() => setHovered(!hovered)}
 						onHoverEnd={() => setHovered(!hovered)}
@@ -66,7 +66,7 @@ const HomeFR = ({onCursor}) => {
 							</motion.div>
 						</Flex>
 						<h2 className="featured-title">
-							MON <br /> DERNIER PROJET
+							MON <br /> PROJET ACTUEL
 							<span className="arrow">
 								<motion.svg 
 									animate={{x: hovered? 48 : 0}}
@@ -88,7 +88,7 @@ const HomeFR = ({onCursor}) => {
 						<video
 							loop
 							autoPlay
-							muted src={require('../../assets/video/my_projects.mp4').default}>
+							muted src={require('../../assets/video/reveal_my.mp4').default}>
 						</video>
 					</FeaturedVideo>
 				</Link>

@@ -51,7 +51,7 @@ const Home = ({onCursor}) => {
 							</motion.div>
 						</Flex>
 						<h2 className="featured-title">
-							MY <br /> LATEST PROJECT
+							MY <br /> CURRENT PROJECT
 							<span className="arrow">
 								<motion.svg 
 									animate={{x: hovered? 48 : 0}}
@@ -73,7 +73,7 @@ const Home = ({onCursor}) => {
 						<video
 							loop
 							autoPlay
-							muted src={require('../../assets/video/my_projects.mp4').default}>
+							muted src={require('../../assets/video/reveal_my.mp4').default}>
 						</video>
 					</FeaturedVideo>
 				</Link>

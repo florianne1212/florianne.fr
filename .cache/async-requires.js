@@ -5,6 +5,7 @@ exports.components = {
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-42-projects-js": () => import("./../../../src/pages/42projects.js" /* webpackChunkName: "component---src-pages-42-projects-js" */),
   "component---src-pages-aboutme-js": () => import("./../../../src/pages/aboutme.js" /* webpackChunkName: "component---src-pages-aboutme-js" */),
+  "component---src-pages-french-42-projects-fr-js": () => import("./../../../src/pages/French/42projects_fr.js" /* webpackChunkName: "component---src-pages-french-42-projects-fr-js" */),
   "component---src-pages-french-aboutme-fr-js": () => import("./../../../src/pages/French/aboutme_fr.js" /* webpackChunkName: "component---src-pages-french-aboutme-fr-js" */),
   "component---src-pages-french-index-fr-js": () => import("./../../../src/pages/French/index_fr.js" /* webpackChunkName: "component---src-pages-french-index-fr-js" */),
   "component---src-pages-french-myprojects-fr-js": () => import("./../../../src/pages/French/myprojects_fr.js" /* webpackChunkName: "component---src-pages-french-myprojects-fr-js" */),

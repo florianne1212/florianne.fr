@@ -35,24 +35,24 @@ const MyProjectsFR = () => {
 			</BannerTitle>
 			{/* <Title></Title> */}
 			<ContentComing>
-					Le 1er Mai je vais lancer ma boutique Etsy pour vendre des cartes de voeux en ligne qui pourront être "gratter".<br />
+					Le 1er Mai je vais lancer ma boutique Etsy pour vendre des cartes de voeux en ligne qui pourront être grattées.<br />
 					Les acheteur recevront un lien avec le message qu'ils souhaitent et pourront l'offrir.<br />
-					C'est une idée de cadeau original qui change des traditionnels carte en papier<br />
-					voici une avant-première et le lien d'exemple d'une&nbsp;
+					C'est une idée de cadeau original qui change des traditionnels cartes en papier.<br />
+					Voici une avant-première et le lien d'exemple d'une&nbsp;
 					<a
 						href="https://www.test.revealyourmessage.com/"
 						onMouseEnter={() => onCursor("pointer")}
 						onMouseLeave={onCursor}
 						onClick={onCursor}
 					>
-						première version 
+						première version.
 					</a>
 			</ContentComing>
 			<PreviewVideo>
 					<video
 						loop
 						autoPlay
-						muted src={require('../../assets/video/my_projects.mp4').default}>
+						muted src={require('../../assets/video/reveal.mp4').default}>
 					</video>
 			</PreviewVideo>
 		</LayoutFR>

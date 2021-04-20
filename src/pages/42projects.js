@@ -37,22 +37,39 @@ const MyProjects = () => {
 			</BannerTitle>
 			{/* <Title></Title> */}
 			<ContentComing>
-					Here are som of my favorites project made during my Cursus in 42 you can find them all on&nbsp;
+					Here are some of my favorites project made during my Cursus in 42 you can find them all on&nbsp;
 					<a
 						href="https://github.com/florianne1212"
 						onMouseEnter={() => onCursor("pointer")}
 						onMouseLeave={onCursor}
 						onClick={onCursor}
 					>
-						my github
+						my github.
 					</a>
 			</ContentComing>
 			<CUB3D>
-				cub3D has been one of my favorite project because it's the first visual project made during my cursus.<br/>
-				The project is inspired by the world-famous eponymous 90’s game Wolfeinstein. We had to reproduce some of the features of the game thanks to raycasting<br/>
+				<a>
+					<strong>CUB3D<br/></strong>
+					This has been one of my favorite project because it's the first visual project made during my cursus.<br/>
+					The project is inspired by the world-famous eponymous 90’s game Wolfeinstein. We had to reproduce some of the features of the game thanks to raycasting.<br/>
+					here you can see an extract of my project.
+				</a>
+				<video
+						loop
+						autoPlay
+						muted src={require('../assets/video/cub3d_cut.mp4').default}>
+				</video>
 			</CUB3D>
 			<MINISHELL>
-				Minishell was a really interesting project in wich we had to create a simple shell. we had to implement some command like echo, export, pwd, ...<br/> 
+				<video
+						loop
+						autoPlay
+						muted src={require('../assets/video/minishell_cut.mp4').default}>
+				</video>
+				<a>
+					<strong>MINISHELL<br/></strong>
+					This was another really interesting project in wich we had to create a simple shell. we had to implement some command like echo, export, pwd, ...<br/> 
+				</a>
 			</MINISHELL>
 		</Layout>
 	</div>

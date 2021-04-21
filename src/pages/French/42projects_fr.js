@@ -58,7 +58,7 @@ const MyProjects = () => {
 				<video
 						loop
 						autoPlay
-						muted src={require('../../assets/video/cub3d_cut.mp4').default}>
+						muted src={require('../../assets/video/cat_cub.mp4').default}>
 				</video>
 			</CUB3D>
 			<MINISHELL>

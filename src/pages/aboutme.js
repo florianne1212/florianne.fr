@@ -1,4 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, Suspense } from 'react'
+import { translate } from "react-i18next"
+import {useTranslation} from "react-i18next";
 
 import {
 	Banner,
@@ -13,7 +15,7 @@ import {Content, HomeContentSection} from '../styles/homeStyles'
 import {useGlobalStateContext, useGlobalDispatchContext} from '../context/globalContext'
 
 const AboutMe = () => {
-
+  const [t, i18n]  = useTranslation('common');
 	const container = {
 		initial: { y: 800 },
 		animate: {
@@ -69,10 +71,8 @@ const AboutMe = () => {
                 </a>
 
                 <Content>
-                    I am a student at school 42 and I am trying to become a front-end developer. <br />
-                    After my two year diploma in Marketing techniques and a year of study abroad in Budapest I've decided that I wanted to learn new things and I went to school 42. <br />
-                    Since then I've learned a lot about coding and about myself. <br />
-                    The main thing I learned was that if I put the effort and the time into it I am capable to learn anything I want. <br />
+                  {t('description')}
+            
                 </Content>
             </Banner>
         </Layout>

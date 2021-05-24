@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.1.5",
+    "@wapps/gatsby-plugin-i18next": "^1.1.6",
     "babel-plugin-styled-components": "^1.12.0",
     "framer-motion": "^4.0.3",
     "gatsby": "^3.1.2",
@@ -44,5 +45,4 @@
   "devDependencies": {
     "webpack": "^5.30.0"
   }
-  
 }

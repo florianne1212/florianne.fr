@@ -1,0 +1,18 @@
+{
+    "site": {
+      "Gatsby Default Starter": "Gatsby Starter par Default",
+      "footer": "construit avec gatsby"
+    },
+    "home": {
+      "test": "Bonjour,",
+      "title": "salut",
+      "content": "bienvenue",
+      "link": "Go to page 2"
+    },
+    "page2": {
+      "title": "Hi from the second page",
+      "content": "Welcome to page 2",
+      "link": "Go back to the homepage",
+      "description" : "testfr"
+    }
+}

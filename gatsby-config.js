@@ -24,7 +24,7 @@ module.exports = {
       options: {
         name: 'gatsby-starter-lingui',
         short_name: 'starter',
-        start_url: '/gatsby-i18n/gatsby-starter-i18next/',
+        start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
@@ -32,21 +32,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-layout`,
       options: {
-        path: `${__dirname}/src/locales`,
-        name: `locale`,
-      },
-    },
-    {
-      resolve: '@wapps/gatsby-plugin-i18next',
-      options: {
-        availableLngs: ['en', 'el'],
-        fallbackLng: 'el',
-        i18nextOptions: {
-          debug: false,
-        },
-      },
+        component: `${__dirname}/src/components/layout.js`
+      }
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",

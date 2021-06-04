@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, Suspense } from 'react'
-import { translate } from "react-i18next"
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next"
+
 
 import {
 	Banner,
@@ -15,7 +15,7 @@ import {Content, HomeContentSection} from '../styles/homeStyles'
 import {useGlobalStateContext, useGlobalDispatchContext} from '../context/globalContext'
 
 const AboutMe = () => {
-  const [t, i18n]  = useTranslation('common');
+  const { t } = useTranslation()
 	const container = {
 		initial: { y: 800 },
 		animate: {
@@ -71,7 +71,7 @@ const AboutMe = () => {
                 </a>
 
                 <Content>
-                  {t('description')}
+                  {t('page2.description')}
             
                 </Content>
             </Banner>

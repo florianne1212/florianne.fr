@@ -11,26 +11,15 @@ import {useGlobalStateContext, useGlobalDispatchContext} from '../context/global
 import HomeBanner from '../components/homePage/HomeBanner'
 import Home from '../components/homePage/Home'
 
-import common_fr from "./../locales/fr/aboutme.json";
-import common_en from "./../locales/en/aboutme.json";
-import {I18nextProvider} from "react-i18next";
-import i18next from "i18next";
+
+import { useTranslation } from "react-i18next"
+
 
     
 
 const IndexPage = props => {
-	i18next.init({
-        interpolation: { escapeValue: false },  // React already does escaping
-        lng: 'en',                              // language to use
-        resources: {
-            en: {
-                common: common_en               // 'common' is our custom namespace
-            },
-            fr: {
-                common: common_fr
-            },
-        },
-    });
+
+	const { t } = useTranslation()
 	const [isClient, setClient] = useState(false);
 	const key = isClient ? "client" : "server";
 
@@ -49,10 +38,9 @@ const IndexPage = props => {
 	if ( !isClient ) return null;
 	return (
 		<div key={key}>
-			 <I18nextProvider i18n={i18next}>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>Florianne</title>
+				<title>{t('home.title')}</title>
 			</Helmet>
 
 			<Layout>
@@ -61,7 +49,6 @@ const IndexPage = props => {
 				<Home/>
 				
 			</Layout>
-			</I18nextProvider>
 		</div>
 	);
 }

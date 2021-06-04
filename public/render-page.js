@@ -14799,7 +14799,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var i18next__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! i18next */ "./node_modules/i18next/dist/esm/i18next.js");
 
 i18next__WEBPACK_IMPORTED_MODULE_0__.default.init({
-  fallbackLng: 'en',
+  fallbackLng: 'fr',
   resources: {
     fr: {
       translations: __webpack_require__(/*! ../locales/fr/translation.json */ "./src/locales/fr/translation.json")
@@ -26985,7 +26985,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"My Gatsby
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default Starter","footer":"Built with Gatsby"},"home":{"test":"hello","title":"Hi you !","content":"Welcome to your new Gatsby site.\\nNow go build something great.","link":"Go to page 2"},"page2":{"title":"Hi from the second page","content":"Welcome to page 2","link":"Go back to the homepage","description":"testen"}}');
+module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default Starter","footer":"Built with Gatsby"},"home":{"test":"hello","title":"Hi you !","content":"Welcome to your new Gatsby site.\\nNow go build something great.","link":"Go to page 2"},"aboutme":{"description":{"line1":"I am a student at school 42 and I am trying to become a front-end developer.","line2":"After my two year diploma in Marketing techniques and a year of study abroad in Budapest I\'ve decided that I wanted to learn new things and I went to school 42.","line3":"Since then I\'ve learned a lot about coding and about myself.","line4":"The main thing I learned was that if I put the effort and the time into it I am capable to learn anything I want."}},"page2":{"title":"Hi from the second page","content":"Welcome to page 2","link":"Go back to the homepage"}}');
 
 /***/ }),
 

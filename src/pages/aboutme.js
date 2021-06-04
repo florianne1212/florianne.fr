@@ -71,7 +71,10 @@ const AboutMe = () => {
                 </a>
 
                 <Content>
-                  {t('page2.description')}
+                  {t('aboutme.description.line1')} <br />
+                  {t('aboutme.description.line2')} <br />
+                  {t('aboutme.description.line3')} <br />
+                  {t('aboutme.description.line4')} <br />
             
                 </Content>
             </Banner>

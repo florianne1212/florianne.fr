@@ -5,7 +5,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 //styled components
 import {Container , Flex} from '../styles/globalStyles'
 import { FooterContent, FooterSocial } from "../styles/footerStyles"
-
+import { useTranslation } from "react-i18next"
 
 import {
 	Nav,
@@ -17,40 +17,45 @@ import {
 	Language,
 } from '../styles/navigationStyles'
 
-const navRoutes = [
-	{
-		id: 0,
-		title: 'my resume',
-		path:'resume',
-		video: "pepin-fresh.mp4",
-	},
-	{
-		id: 1,
-		title: 'my personnal projects',
-		path:'myprojects',
-		video: "pepin-bathtub.mp4",
-	},
-	{
-		id: 2,
-		title: 'my school projects',
-		path:'42projects',
-		video: "pepin-nelson.mp4",
-	},
-	{
-		id: 3,
-		title: 'about me',
-		path:'aboutme',
-		video: "pepin-sheep.mp4",
-	},
-	// {
-	// 	id: 4,
-	// 	title: 'connected to the land',
-	// 	path:'/50-beaches',
-	// 	video: "pepin-road.mp4",
-	// },
-]
+
 
 const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
+
+	const { t } = useTranslation()
+
+
+	const navRoutes = [
+		{
+			id: 0,
+			title: 'my resume',
+			path:'resume',
+			video: "pepin-fresh.mp4",
+		},
+		{
+			id: 1,
+			title: 'my personnal projects',
+			path:'myprojects',
+			video: "pepin-bathtub.mp4",
+		},
+		{
+			id: 2,
+			title: 'my school projects',
+			path:'42projects',
+			video: "pepin-nelson.mp4",
+		},
+		{
+			id: 3,
+			title: 'about me',
+			path:'aboutme',
+			video: "pepin-sheep.mp4",
+		},
+		// {
+		// 	id: 4,
+		// 	title: 'connected to the land',
+		// 	path:'/50-beaches',
+		// 	video: "pepin-road.mp4",
+		// },
+	]
 
 	const[revealVideo, setRevealVideo] = useState({
 		show: false,

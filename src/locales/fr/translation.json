@@ -1,18 +1,51 @@
 {
-    "site": {
-      "Gatsby Default Starter": "Gatsby Starter par Default",
-      "footer": "construit avec gatsby"
+  "site": {
+    "Gatsby Default Starter": "Gatsby Default Starter",
+    "footer": "Built with Gatsby"
+  },
+  "home": {
+    "test": "hello",
+    "title": "Hi you !",
+    "content": "Welcome to your new Gatsby site.\nNow go build something great.",
+    "link": "Go to page 2"
+},
+"Home": {
+  "current project" : "mon projet actuel",
+  "soon" : "a venir"
+},
+"navigation": {
+  "title" : "Pourquoi m'embaucher ?",
+  "page1" : "mon cv",
+  "page2" : "mes projets personnels",
+  "page3" : "mes projets à 42",
+  "page4" : "à propos de moi"
+},
+"Myprojects": {
+  "title" : "A venir",
+  "description" : {  
+    "line1": "Le 1er Mai je vais lancer ma boutique Etsy pour vendre des cartes de voeux en ligne qui pourront être grattées.",
+    "line2": "Les acheteur recevront un lien avec le message qu'ils souhaitent et pourront l'offrir.",
+    "line3": "C'est une idée de cadeau original qui change des traditionnels cartes en papier.",
+    "line4": "Voici une avant-première et le lien d'exemple d'une",
+    "link" : "première version."
+  }
+},
+  "42projects": {
+    "title" : "Quelques projets fait durant mon cursus à 42",
+    "intro" : "Voici quelques uns de mes projets favoris faits pour mon cursus à 42 tous mes projets sont visible sur mon github.",
+    "cub3d" : {
+      "line1": "C'est un de mes projets préférés car c'est le premier projet visuel que j'ai fait.",
+      "line2": "Ce projet est inspiré du jeu éponyme mondialement connu Wolfenstein, considéré comme le premier FPS jamais développé.",
+      "line3": "Nous avions à reproduire certaines parties du jeu grâce aux raycasting.Voici un extrait de mon projet."
     },
-    "home": {
-      "test": "Bonjour,",
-      "title": "salut",
-      "content": "bienvenue",
-      "link": "Go to page 2"
-    },
-    "page2": {
-      "title": "Hi from the second page",
-      "content": "Welcome to page 2",
-      "link": "Go back to the homepage",
-      "description" : "testfr"
+    "minishell": "Un autre projet très intéressant pour lequel nous devions recréer un simple shell. Nous avions à Implémenter certaines commandes tel que echo, pwd, export, ..."
+  },
+  "aboutme": {
+    "description" : {
+      "line1": "Je suis une étudiante à l'école 42 et une developpeuse web en devenir.",
+      "line2": "A la suite de mon DUT Techniques de commercialisation et de mon DUETI à Budapest, J'ai décidé que je voulais apprendre de nouvelles choses et je suis partie étudier à l'école 42.",
+      "line3": "Depuis j'ai appris beaucoup de choses sur le code et sur moi.",
+      "line4": ""
     }
+  }
 }

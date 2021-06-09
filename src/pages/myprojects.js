@@ -6,7 +6,7 @@ import {
 
 //context
 import {useGlobalStateContext, useGlobalDispatchContext} from '../context/globalContext'
-
+import { useTranslation } from "react-i18next"
 //layout
 import Layout from "../components/layout"
 import {
@@ -22,6 +22,7 @@ const MyProjects = () => {
 	const {currentTheme, cursorStyles} = useGlobalStateContext()
 	const dispatch = useGlobalDispatchContext()
 
+	const { t } = useTranslation()
 	const onCursor = cursorType => {
 		cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
 		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
@@ -31,21 +32,22 @@ const MyProjects = () => {
 	<div>
 		<Layout>
 			<BannerTitle>
-				<Headline>Coming soon</Headline>
+				<Headline>{t('Myprojects.title')}</Headline>
 			</BannerTitle>
 			{/* <Title></Title> */}
 			<ContentComing>
-					On the 1st of May I am launching my own etsy shop to sell online greeting cards that can be scratched.<br />
-					The buyers will receive a link with the message they desire and they will be able to gift it.<br />
-					It is an original gift idea that offer a change from traditional paper cards.<br />
-					Here are some preview and the link to an example with the&nbsp;
+					{t('Myprojects.description.line1')} <br />
+					{t('Myprojects.description.line2')} <br />
+					{t('Myprojects.description.line3')} <br />
+					{t('Myprojects.description.line4')}
+					&nbsp;
 					<a
 						href="https://www.test.revealyourmessage.com/"
 						onMouseEnter={() => onCursor("pointer")}
 						onMouseLeave={onCursor}
 						onClick={onCursor}
 					>
-						first version.
+						{t('Myprojects.description.link')} <br />
 					</a>
 			</ContentComing>
 			<PreviewVideo>

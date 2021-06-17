@@ -12548,7 +12548,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-layout/gatsby-ssr */ "./node_modules/gatsby-plugin-layout/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "component": "/home/user42/florianne_i18n/src/components/layout.js"
+    "component": "/home/user42/florianne.fr/src/components/layout.js"
   }
 }, {
   name: 'default-site-plugin',
@@ -13972,7 +13972,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/components/layout.js */ "./src/components/layout.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "/home/user42/florianne_i18n/src/components/layout.js" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "/home/user42/florianne.fr/src/components/layout.js" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -14566,10 +14566,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/components/AnimatePresence/index.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/components/AnimatePresence/index.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
 /* harmony import */ var _styles_globalStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/globalStyles */ "./src/styles/globalStyles.js");
 /* harmony import */ var _styles_footerStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/footerStyles */ "./src/styles/footerStyles.js");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/useTranslation.js");
 /* harmony import */ var _styles_navigationStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/navigationStyles */ "./src/styles/navigationStyles.js");
 
 
@@ -14578,39 +14579,43 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const navRoutes = [{
-  id: 0,
-  title: 'my resume',
-  path: 'resume',
-  video: "pepin-fresh.mp4"
-}, {
-  id: 1,
-  title: 'my personnal projects',
-  path: 'myprojects',
-  video: "pepin-bathtub.mp4"
-}, {
-  id: 2,
-  title: 'my school projects',
-  path: '42projects',
-  video: "pepin-nelson.mp4"
-}, {
-  id: 3,
-  title: 'about me',
-  path: 'aboutme',
-  video: "pepin-sheep.mp4"
-} // {
-// 	id: 4,
-// 	title: 'connected to the land',
-// 	path:'/50-beaches',
-// 	video: "pepin-road.mp4",
-// },
-];
+
 
 const Navigation = ({
   toggleMenu,
   setToggleMenu,
   onCursor
 }) => {
+  const {
+    t
+  } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_5__.useTranslation)();
+  const navRoutes = [{
+    id: 0,
+    title: 'my resume',
+    path: 'resume',
+    video: "pepin-fresh.mp4"
+  }, {
+    id: 1,
+    title: 'my personnal projects',
+    path: 'myprojects',
+    video: "pepin-bathtub.mp4"
+  }, {
+    id: 2,
+    title: 'my school projects',
+    path: '42projects',
+    video: "pepin-nelson.mp4"
+  }, {
+    id: 3,
+    title: 'about me',
+    path: 'aboutme',
+    video: "pepin-sheep.mp4"
+  } // {
+  // 	id: 4,
+  // 	title: 'connected to the land',
+  // 	path:'/50-beaches',
+  // 	video: "pepin-road.mp4",
+  // },
+  ];
   const {
     0: revealVideo,
     1: setRevealVideo
@@ -14619,7 +14624,7 @@ const Navigation = ({
     video: "pepin-sheep.mp4",
     key: "0"
   });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_5__.AnimatePresence, null, toggleMenu && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_navigationStyles__WEBPACK_IMPORTED_MODULE_4__.Nav, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_6__.AnimatePresence, null, toggleMenu && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_navigationStyles__WEBPACK_IMPORTED_MODULE_4__.Nav, {
     initial: {
       x: '-100%'
     },
@@ -14640,7 +14645,7 @@ const Navigation = ({
     onClick: () => setToggleMenu(!toggleMenu),
     onMouseEnter: () => onCursor("pointer"),
     onMouseLeave: onCursor
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_navigationStyles__WEBPACK_IMPORTED_MODULE_4__.NavList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, navRoutes.map(route => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_6__.motion.li, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_navigationStyles__WEBPACK_IMPORTED_MODULE_4__.NavList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, navRoutes.map(route => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_7__.motion.li, {
     onMouseEnter: () => onCursor("pointer"),
     onMouseLeave: onCursor,
     onClick: onCursor,
@@ -14661,7 +14666,7 @@ const Navigation = ({
 
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: `/${route.path}`
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_6__.motion.div, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_7__.motion.div, {
     initial: {
       x: -108
     },
@@ -26985,7 +26990,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"My Gatsby
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default Starter","footer":"Built with Gatsby"},"home":{"test":"hello","title":"Hi you !","content":"Welcome to your new Gatsby site.\\nNow go build something great.","link":"Go to page 2"},"Home":{"current project":"my current project","soon":"coming soon"},"slider":{"title":"Why should you hire me ?"},"Myprojects":{"title":"Coming soon","description":{"line1":"On the 1st of May I am launching my own etsy shop to sell online greeting cards that can be scratched.","line2":"The buyers will receive a link with the message they desire and they will be able to gift it.","line3":"It is an original gift idea that offer a change from traditional paper cards.","line4":"Here are some preview and the link to an example with the first version."}},"42projects":{"title":"Some projects made for my 42 Cursus","intro":"Here are some of my favorites project made during my Cursus in 42 you can find them all on my","cub3d":{"line1":"This has been one of my favorite project because it\'s the first visual project made during my cursus.","line2":"The project is inspired by the world-famous eponymous 90’s game Wolfeinstein. We had to reproduce some of the features of the game thanks to raycasting.","line3":"here you can see an extract of my project."},"minishell":"This was another really interesting project in wich we had to create a simple shell. we had to implement some command like echo, export, pwd, ..."},"aboutme":{"description":{"line1":"I am a student at school 42 and I am trying to become a front-end developer.","line2":"After my two year diploma in Marketing techniques and a year of study abroad in Budapest I\'ve decided that I wanted to learn new things and I went to school 42.","line3":"Since then I\'ve learned a lot about coding and about myself.","line4":"The main thing I learned was that if I put the effort and the time into it I am capable to learn anything I want."}}}');
+module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default Starter","footer":"Built with Gatsby"},"home":{"test":"hello","title":"Hi you !","content":"Welcome to your new Gatsby site.\\nNow go build something great.","link":"Go to page 2"},"Home":{"current project":"my current project","soon":"coming soon"},"navigation":{"title":"Why should you hire me ?","page1":"my resume","page2":"my personnal projects","page3":"my school projects","page4":"about me"},"Myprojects":{"title":"Coming soon","description":{"line1":"On the 1st of May I am launching my own etsy shop to sell online greeting cards that can be scratched.","line2":"The buyers will receive a link with the message they desire and they will be able to gift it.","line3":"It is an original gift idea that offer a change from traditional paper cards.","line4":"Here are some preview and the link to an example with the","link":"first version."}},"42projects":{"title":"Some projects made for my 42 Cursus","intro":"Here are some of my favorites project made during my Cursus in 42 you can find them all on my","cub3d":{"line1":"This has been one of my favorite project because it\'s the first visual project made during my cursus.","line2":"The project is inspired by the world-famous eponymous 90’s game Wolfeinstein. We had to reproduce some of the features of the game thanks to raycasting.","line3":"here you can see an extract of my project."},"minishell":"This was another really interesting project in wich we had to create a simple shell. we had to implement some command like echo, export, pwd, ..."},"aboutme":{"description":{"line1":"I am a student at school 42 and I am trying to become a front-end developer.","line2":"After my two year diploma in Marketing techniques and a year of study abroad in Budapest I\'ve decided that I wanted to learn new things and I went to school 42.","line3":"Since then I\'ve learned a lot about coding and about myself.","line4":"The main thing I learned was that if I put the effort and the time into it I am capable to learn anything I want."}}}');
 
 /***/ }),
 
@@ -26996,29 +27001,29 @@ module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default S
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default Starter","footer":"Built with Gatsby"},"home":{"test":"hello","title":"Hi you !","content":"Welcome to your new Gatsby site.\\nNow go build something great.","link":"Go to page 2"},"Home":{"current project":"mon projet actuel","soon":"a venir"},"slider":{"title":"Pourquoi m\'embaucher ?"},"Myprojects":{"title":"A venir","description":{"line1":"Le 1er Mai je vais lancer ma boutique Etsy pour vendre des cartes de voeux en ligne qui pourront être grattées.","line2":"Les acheteur recevront un lien avec le message qu\'ils souhaitent et pourront l\'offrir.","line3":"C\'est une idée de cadeau original qui change des traditionnels cartes en papier.","line4":"Voici une avant-première et le lien d\'exemple d\'une première version."}},"42projects":{"title":"Quelques projets fait durant mon cursus à 42","intro":"Voici quelques uns de mes projets favoris faits pour mon cursus à 42 tous mes projets sont visible sur mon github.","cub3d":{"line1":"C\'est un de mes projets préférés car c\'est le premier projet visuel que j\'ai fait.","line2":"Ce projet est inspiré du jeu éponyme mondialement connu Wolfenstein, considéré comme le premier FPS jamais développé.","line3":"Nous avions à reproduire certaines parties du jeu grâce aux raycasting.Voici un extrait de mon projet."},"minishell":"Un autre projet très intéressant pour lequel nous devions recréer un simple shell. Nous avions à Implémenter certaines commandes tel que echo, pwd, export, ..."},"aboutme":{"description":{"line1":"Je suis une étudiante à l\'école 42 et une developpeuse web en devenir.","line2":"A la suite de mon DUT Techniques de commercialisation et de mon DUETI à Budapest, J\'ai décidé que je voulais apprendre de nouvelles choses et je suis partie étudier à l\'école 42.","line3":"Depuis j\'ai appris beaucoup de choses sur le code et sur moi.","line4":""}}}');
+module.exports = JSON.parse('{"site":{"Gatsby Default Starter":"Gatsby Default Starter","footer":"Built with Gatsby"},"home":{"test":"hello","title":"Hi you !","content":"Welcome to your new Gatsby site.\\nNow go build something great.","link":"Go to page 2"},"Home":{"current project":"mon projet actuel","soon":"a venir"},"navigation":{"title":"Pourquoi m\'embaucher ?","page1":"mon cv","page2":"mes projets personnels","page3":"mes projets à 42","page4":"à propos de moi"},"Myprojects":{"title":"A venir","description":{"line1":"Le 1er Mai je vais lancer ma boutique Etsy pour vendre des cartes de voeux en ligne qui pourront être grattées.","line2":"Les acheteur recevront un lien avec le message qu\'ils souhaitent et pourront l\'offrir.","line3":"C\'est une idée de cadeau original qui change des traditionnels cartes en papier.","line4":"Voici une avant-première et le lien d\'exemple d\'une","link":"première version."}},"42projects":{"title":"Quelques projets fait durant mon cursus à 42","intro":"Voici quelques uns de mes projets favoris faits pour mon cursus à 42 tous mes projets sont visible sur mon github.","cub3d":{"line1":"C\'est un de mes projets préférés car c\'est le premier projet visuel que j\'ai fait.","line2":"Ce projet est inspiré du jeu éponyme mondialement connu Wolfenstein, considéré comme le premier FPS jamais développé.","line3":"Nous avions à reproduire certaines parties du jeu grâce aux raycasting.Voici un extrait de mon projet."},"minishell":"Un autre projet très intéressant pour lequel nous devions recréer un simple shell. Nous avions à Implémenter certaines commandes tel que echo, pwd, export, ..."},"aboutme":{"description":{"line1":"Je suis une étudiante à l\'école 42 et une developpeuse web en devenir.","line2":"A la suite de mon DUT Techniques de commercialisation et de mon DUETI à Budapest, J\'ai décidé que je voulais apprendre de nouvelles choses et je suis partie étudier à l\'école 42.","line3":"Depuis j\'ai appris beaucoup de choses sur le code et sur moi.","line4":""}}}');
 
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*******************************************************************************!*\
-  !*** external "/home/user42/florianne_i18n/node_modules/react-dom/server.js" ***!
-  \*******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** external "/home/user42/florianne.fr/node_modules/react-dom/server.js" ***!
+  \*****************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/home/user42/florianne_i18n/node_modules/react-dom/server.js");;
+module.exports = require("/home/user42/florianne.fr/node_modules/react-dom/server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!**************************************************************************!*\
-  !*** external "/home/user42/florianne_i18n/node_modules/react/index.js" ***!
-  \**************************************************************************/
+/*!************************************************************************!*\
+  !*** external "/home/user42/florianne.fr/node_modules/react/index.js" ***!
+  \************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/home/user42/florianne_i18n/node_modules/react/index.js");;
+module.exports = require("/home/user42/florianne.fr/node_modules/react/index.js");;
 
 /***/ }),
 

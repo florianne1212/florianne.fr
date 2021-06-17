@@ -6,7 +6,7 @@ module.exports = [{
       options: {"plugins":[],"name":"gatsby-starter-lingui","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":null},
     },{
       plugin: require('../node_modules/gatsby-plugin-layout/gatsby-browser.js'),
-      options: {"plugins":[],"component":"/home/user42/florianne_i18n/src/components/layout.js"},
+      options: {"plugins":[],"component":"/home/user42/florianne.fr/src/components/layout.js"},
     },{
       plugin: require('../gatsby-browser.js'),
       options: {"plugins":[]},

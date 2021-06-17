@@ -21,7 +21,20 @@ import {
 
 const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 
-	const { t } = useTranslation()
+	const { t, i18n } = useTranslation()
+
+	const [values, setValues] = useState({
+		language: 'en'
+	  });
+	
+	  function handleChange(event) {
+		i18n.changeLanguage(event.target.value)
+	
+		setValues(oldValues => ({
+		  ...oldValues,
+		  [event.target.name]: event.target.value,
+		}));
+	  }
 
 
 	const navRoutes = [
@@ -152,15 +165,15 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
 								<NavFooter>
 									<Flex spaceBetween>
 										<FooterContent>
-											<Link to={`/French/index_fr`}>
+											{/* <Link to={`/French/index_fr`}> */}
 												<p
 													onMouseEnter={() => onCursor("pointer")}
 													onMouseLeave={onCursor}
-													onClick={onCursor}
+													onClick={(e) => handleChange(e)}
 												>
 													FR
 												</p>
-											</Link>
+											{/* </Link> */}
 										</FooterContent>
 										<FooterContent wider>
 										<Link to={`/`}>

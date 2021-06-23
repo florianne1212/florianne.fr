@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+
  
 export const Banner = styled.div `
 	overflow: hidden;
@@ -10,6 +11,14 @@ export const Banner = styled.div `
 	width: 100%;
 	/* position: relative; */
 	margin-bottom: 0px;
+`
+
+export const BannerAboutMe = styled.div `
+	display: flex;
+	flex-wrap: row wrap;
+	-webkit-flex-wrap: wrap;
+	align-items: center;
+	margin-top: 8rem;
 `
 
 
@@ -29,26 +38,52 @@ export const Content = styled.h2`
 	margin-left: 150px;
 	color: ${props => props.theme.text};
 `
+export const ContentAboutMe = styled.h2`
+	flex-direction: column;
+	font-size: 1.5rem;
+	@media screen and (max-width: 480px) {
+		max-width: 500px;
+	}  
+	@media screen and (max-width: 900px) and (min-width: 480px) {
+		max-width: 600px;
+	}
+  	@media screen and (min-width: 900px) {
+		max-width: 1000px;
+	}
+	
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	color: ${props => props.theme.text};
+`
+
+export const PhotoAboutMe = styled.h2`
+	font-size: 1.5rem;
+	// font-weight: 400;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	color: ${props => props.theme.text};
+`
+export const SocialAboutMe = styled.h2`
+	flex-direction: row;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	color: ${props => props.theme.text};
+`
+
+export const TitleAboutMe = styled.h2`
+	order: 1;
+	font-size: 5rem;
+	font-weight: 400;
+	line-height: 0.76;
+	color: ${props => props.theme.text};
+`
 
 export const GithubLink = styled.h2`
-	/* argin-top: 25vh;  */
-	/* width: 53%; */
 	display: inline-block;
-	margin-top: 210px;
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin-left: 100px;
 	color: ${props => props.theme.text};
 	svg {
 		width: 120px;
 		height: 80px;
-		/* display: block;
-		position: relative;
-		overflow: hidden; */
-		/* position: relative; */
-		top: 150px;
-		left: 150px;
-		width: 108px;
 		path {
 			fill: ${props => props.theme.text};
 		}
@@ -56,20 +91,13 @@ export const GithubLink = styled.h2`
 `
 
 export const LinkedinLink = styled.h2`
-	/* margin-top:; */
-	/* width: 53%; */
-	/* margin-top: 310px; */
+
 	display: inline-block;
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin-left: 50px;
 	color: ${props => props.theme.text};
 	svg {
 		width: 120px;
 		height: 80px;
-		/* position: relative; */
 		left: 150px;
-		width: 108px;
 		path {
 			fill: ${props => props.theme.text};
 		}

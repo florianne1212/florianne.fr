@@ -41,6 +41,7 @@
     "minishell": "This was another really interesting project in wich we had to create a simple shell. we had to implement some command like echo, export, pwd, ..."
   },
   "aboutme": {
+	"title": "About me",
     "description" : {
       "line1": "I am a student at school 42 and I am trying to become a front-end developer.",
       "line2": "After my two year diploma in Marketing techniques and a year of study abroad in Budapest I've decided that I wanted to learn new things and I went to school 42.",

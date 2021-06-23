@@ -14587,8 +14587,23 @@ const Navigation = ({
   onCursor
 }) => {
   const {
-    t
+    t,
+    i18n
   } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_5__.useTranslation)();
+  const {
+    0: values,
+    1: setValues
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    language: 'en'
+  });
+
+  function handleChange(event) {
+    i18n.changeLanguage(event.target.value);
+    setValues(oldValues => ({ ...oldValues,
+      [event.target.name]: event.target.value
+    }));
+  }
+
   const navRoutes = [{
     id: 0,
     title: 'my resume',
@@ -14689,13 +14704,11 @@ const Navigation = ({
     fillRule: "evenodd"
   }))), route.title)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_navigationStyles__WEBPACK_IMPORTED_MODULE_4__.NavFooter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_globalStyles__WEBPACK_IMPORTED_MODULE_2__.Flex, {
     spaceBetween: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_footerStyles__WEBPACK_IMPORTED_MODULE_3__.FooterContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: `/French/index_fr`
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_footerStyles__WEBPACK_IMPORTED_MODULE_3__.FooterContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     onMouseEnter: () => onCursor("pointer"),
     onMouseLeave: onCursor,
-    onClick: onCursor
-  }, "FR"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_footerStyles__WEBPACK_IMPORTED_MODULE_3__.FooterContent, {
+    onClick: e => handleChange(e)
+  }, "FR")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_footerStyles__WEBPACK_IMPORTED_MODULE_3__.FooterContent, {
     wider: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: `/`
@@ -14804,7 +14817,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var i18next__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! i18next */ "./node_modules/i18next/dist/esm/i18next.js");
 
 i18next__WEBPACK_IMPORTED_MODULE_0__.default.init({
-  fallbackLng: 'en',
+  fallbackLng: 'fr',
   resources: {
     fr: {
       translations: __webpack_require__(/*! ../locales/fr/translation.json */ "./src/locales/fr/translation.json")

@@ -41,6 +41,7 @@
     "minishell": "Un autre projet très intéressant pour lequel nous devions recréer un simple shell. Nous avions à Implémenter certaines commandes tel que echo, pwd, export, ..."
   },
   "aboutme": {
+	"title": "A propos de moi",
     "description" : {
       "line1": "Je suis une étudiante à l'école 42 et une developpeuse web en devenir.",
       "line2": "A la suite de mon DUT Techniques de commercialisation et de mon DUETI à Budapest, J'ai décidé que je voulais apprendre de nouvelles choses et je suis partie étudier à l'école 42.",

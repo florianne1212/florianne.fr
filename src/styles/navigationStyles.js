@@ -10,7 +10,7 @@ export const Nav = styled(motion.div)`
 	background: ${props => props.theme.background};
 	color: #000;
 	z-index: 100;
-	overflow: hidden;
+	// overflow: hidden;
 `
 
 export const NavHeader = styled.div`
@@ -42,6 +42,7 @@ export const CloseNav = styled.div`
 export const NavList = styled.div`
 	height: 100%;
 	width: 100%;
+	// margin-top: 25%;
 	display: flex;
 	align-items: center;
 	ul {
@@ -51,8 +52,8 @@ export const NavList = styled.div`
 			font-size: 3rem;
 			text-transform: uppercase;
 			font-weight: 900;
-			height: 96px;
-			line-height: 96px;
+			height: 7rem;
+			line-height: 7rem;
 			overflow: hidden;;
 			.link{
 				color: ${props => props.theme.text};

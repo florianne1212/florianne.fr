@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useLayoutEffect, useState} from 'react'
 
 //styled Component
 import {
@@ -19,8 +19,24 @@ import resume from '../assets/document/resume_en.pdf';
 import { Document, Page, pdfjs   } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+function useMediaQuery() {
+	const [screenSize, setScreenSize] = useState([0, 0]);
+	
+	useLayoutEffect(() => {
+	  function updateScreenSize() {
+		setScreenSize([window.innerWidth, window.innerHeight]);
+	  }
+	  window.addEventListener("resize", updateScreenSize);
+	  updateScreenSize();
+	  return () => window.removeEventListener("resize", updateScreenSize);
+	}, []);
+	
+	return screenSize;
+  }
 
 const Resume = () => {
+
+	const [width] = useMediaQuery();
 
 	const {currentTheme, cursorStyles} = useGlobalStateContext()
 	const dispatch = useGlobalDispatchContext()
@@ -29,7 +45,19 @@ const Resume = () => {
 		cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
 		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	}
-	const [scale, setScale] = useState(1.0);
+	let my_scale;
+	if (width < 400)  
+		my_scale = 0.25
+	else 
+		my_scale = 1
+		
+	// else if (screen.width < 980)
+	// 	my_scale = 0.55
+	// else
+	// 	my_scale = 1
+
+	const [scale, setScale] = useState(1);
+
   
 	return (
 	<div>

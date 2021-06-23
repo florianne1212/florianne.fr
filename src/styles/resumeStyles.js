@@ -20,7 +20,7 @@ export const Main = styled.div `
 export const Download = styled.div `
 	position: absolute;
 	top: 25%;
-	left: 2rem;
+	left: 0.5 rem;
 	button{
 		transform-origin: center;
 		border: none;
@@ -38,7 +38,7 @@ export const Download = styled.div `
 export const ZoomIn = styled.div `
 	position: absolute;
 	top: 75%;
-	left: 2rem;
+	left: 0.5 rem;
 	span {
 
 		padding: 20px;
@@ -58,7 +58,7 @@ export const ZoomIn = styled.div `
 export const ZoomOut = styled.div `
 	position: absolute;
 	top: 50%;
-	left: 2rem;
+	left: 0.5 rem;
 	span {
 		padding: 20px;
 		/* width: 36px;

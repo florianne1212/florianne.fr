@@ -21,14 +21,16 @@
   "page4" : "à propos de moi"
 },
 "Myprojects": {
-  "title" : "A venir",
-  "description" : {  
-    "line1": "Le 1er Mai je vais lancer ma boutique Etsy pour vendre des cartes de voeux en ligne qui pourront être grattées.",
-    "line2": "Les acheteur recevront un lien avec le message qu'ils souhaitent et pourront l'offrir.",
-    "line3": "C'est une idée de cadeau original qui change des traditionnels cartes en papier.",
-    "line4": "Voici une avant-première et le lien d'exemple d'une",
-    "link" : "première version."
-  }
+	"ryom": {
+		"title" : "RYOM",
+		"description" : {  
+			"line1": "Reveal Your Message ou RYOM est un concept de boutique Etsy pour vendre des cartes de voeux en ligne qui peuvent être grattées.",
+			"line2": "Les acheteur recoivent un lien avec le message qu'ils souhaitent et peuvent l'offrir.",
+			"line3": "C'est une idée de cadeau original qui change des traditionnels cartes en papier.",
+			"line4": "Voici un exemple",
+			"link" : "de carte."
+		}
+	}
 },
   "42projects": {
     "title" : "Quelques projets fait durant mon cursus à 42",

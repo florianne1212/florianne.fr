@@ -69,15 +69,16 @@ const Home = ({onCursor}) => {
 						</h2>
 
 					</FeaturedContent>
-					<FeaturedVideo>
-						<video
-							loop
-							autoPlay
-							muted src={require('../../assets/video/reveal_my.mp4').default}>
-						</video>
-					</FeaturedVideo>
+					
 				</Link>
 			</Container>
+			<FeaturedVideo>
+				<video
+					loop
+					autoPlay
+					muted src={require('../../assets/video/reveal_my.mp4').default}>
+				</video>
+			</FeaturedVideo>
 		</HomeFeaturedSection>
 	)
 }

@@ -32,14 +32,14 @@ const MyProjects = () => {
 	<div>
 		<Layout>
 			<BannerTitle>
-				<Headline>{t('Myprojects.title')}</Headline>
+				<Headline>{t('Myprojects.ryom.title')}</Headline>
 			</BannerTitle>
 			{/* <Title></Title> */}
 			<ContentComing>
-					{t('Myprojects.description.line1')} <br />
-					{t('Myprojects.description.line2')} <br />
-					{t('Myprojects.description.line3')} <br />
-					{t('Myprojects.description.line4')}
+					{t('Myprojects.ryom.description.line1')} <br />
+					{t('Myprojects.ryom.description.line2')} <br />
+					{t('Myprojects.ryom.description.line3')} <br />
+					{t('Myprojects.ryom.description.line4')}
 					&nbsp;
 					<a
 						href="https://www.test.revealyourmessage.com/"

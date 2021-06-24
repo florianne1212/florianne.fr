@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export const Banner = styled.div `
 	overflow: hidden;
 	/* display: inline-block; */
-	margin-top: 15%;
+	margin-top: 150px;
 	/* background: ${props => props.theme.background}; */
 	height: 50vh;
 	width: 100%;
@@ -41,16 +41,12 @@ export const Content = styled.h2`
 export const ContentAboutMe = styled.h2`
 	flex-direction: column;
 	font-size: 1.5rem;
-	@media screen and (max-width: 480px) {
-		max-width: 500px;
+	@media screen and (max-width: 800px) {
+		max-width: 400px;
 	}  
-	@media screen and (max-width: 900px) and (min-width: 480px) {
+  	@media screen and (min-width: 800px) {
 		max-width: 600px;
 	}
-  	@media screen and (min-width: 900px) {
-		max-width: 1000px;
-	}
-	
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 	color: ${props => props.theme.text};
@@ -115,7 +111,7 @@ export const HomeFeaturedSection = styled(motion.div) `
 `
 
 export const FeaturedContent = styled(motion.div) `
-	margin-top: 25%;
+	margin-top: 10rem;
 	height: 480px;
 	width: 100%;
 	padding: 56px 124px;
@@ -160,16 +156,18 @@ export const FeaturedContent = styled(motion.div) `
 
 export const FeaturedVideo = styled.div `
 	position: absolute;
+	margin-top: 100px;
 	z-index: -1;
 	/* margin-left: auto;
 	margin-right: auto; */
 	width: 110%;
 	height: 480px;
 	top: 0;
-	display: block;
+	// display: block;
 	overflow: hidden;
 	video {
 		width: 100%;
+		// height: 800px;
 	}
 `
 

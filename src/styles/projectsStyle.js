@@ -47,7 +47,7 @@ export const MINISHELL = styled.h2`
 export const BannerTitle = styled.h1 `
 /* position: absolute; */
 margin-top: 210px;
-margin-left: 100px;
+margin-left: 2rem;
 color: ${props => props.theme.text};
 pointer-events: none;
 `
@@ -71,7 +71,7 @@ export const ContentComing = styled.h2`
 	width: 53%;
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 150px;
+	margin-left: 2rem;
 	color: ${props => props.theme.text};
 	a:link {
 		color: ${props => props.theme.text};

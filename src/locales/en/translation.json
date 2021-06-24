@@ -21,14 +21,16 @@
   "page4" : "about me"
 },
 "Myprojects": {
-  "title" : "Coming soon",
-  "description" : {  
-    "line1": "On the 1st of May I am launching my own etsy shop to sell online greeting cards that can be scratched.",
-    "line2": "The buyers will receive a link with the message they desire and they will be able to gift it.",
-    "line3": "It is an original gift idea that offer a change from traditional paper cards.",
-    "line4": "Here are some preview and the link to an example with the",
-    "link" : "first version."
-  }
+	"ryom": {
+		"title" : "RYOM",
+		"description" : {  
+			"line1": "Reveal YOur Message or RYOM is the concept of an etsy shop on which I sell online greeting cards that can be scratched.",
+			"line2": "The buyers will receive a link with the message they desire and they will be able to gift it.",
+			"line3": "It is an original gift idea that offer a change from traditional paper cards.",
+			"line4": "Here are some preview and the link to an example with the",
+			"link" : "first version."
+		}
+	}
 },
   "42projects": {
     "title" : "Some projects made for my 42 Cursus",

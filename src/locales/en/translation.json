@@ -21,6 +21,16 @@
   "page4" : "about me"
 },
 "Myprojects": {
+	"draw": {
+		"title" : "collaborative drawing app",
+		"description" : {  
+			"line1": "To start coding with NOde.js I made a collaborative drawing website. ",
+			"line2": "The users can chose the color of ta pencil from a defined list and the size",
+			"line3": "it is a collaborative drawing website this mean everyone can see the drawing and anyone can erase all the drawing. ",
+			"line4": "Here is a link to the ",
+			"link" : "website."
+		}
+	},
 	"ryom": {
 		"title" : "RYOM",
 		"description" : {  

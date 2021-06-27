@@ -21,12 +21,22 @@
   "page4" : "à propos de moi"
 },
 "Myprojects": {
+	"draw": {
+		"title" : "collaborative drawing app",
+		"description" : {  
+			"line1": "Pour commencer à coder avec Node.js j'ai décidé de créer un site de dessin collaboratif. ",
+			"line2": "Les utilisateurs peuvent choisir les couleurs parmit une liste définit et augmenter la taille du crayon. ",
+			"line3": "comme c'est un site de dessin collaboratif si un utilisateur décide de réinitialiser le dessin tout est perdu pour tout le monde. ",
+			"line4": "Voici un lien vers le site",
+			"link" : "de dessin."
+		}
+	},
 	"ryom": {
 		"title" : "RYOM",
 		"description" : {  
-			"line1": "Reveal Your Message ou RYOM est un concept de boutique Etsy pour vendre des cartes de voeux en ligne qui peuvent être grattées.",
-			"line2": "Les acheteur recoivent un lien avec le message qu'ils souhaitent et peuvent l'offrir.",
-			"line3": "C'est une idée de cadeau original qui change des traditionnels cartes en papier.",
+			"line1": "Reveal Your Message ou RYOM est un concept de boutique Etsy pour vendre des cartes de voeux en ligne qui peuvent être grattées. ",
+			"line2": "Les acheteur recoivent un lien avec le message qu'ils souhaitent et peuvent l'offrir. ",
+			"line3": "C'est une idée de cadeau original qui change des traditionnels cartes en papier. ",
 			"line4": "Voici un exemple",
 			"link" : "de carte."
 		}

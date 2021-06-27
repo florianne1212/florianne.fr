@@ -46,7 +46,6 @@ export const MINISHELL = styled.h2`
 
 export const BannerTitle = styled.h1 `
 /* position: absolute; */
-margin-top: 210px;
 margin-left: 2rem;
 color: ${props => props.theme.text};
 pointer-events: none;
@@ -67,11 +66,12 @@ export const PreviewVideo  = styled.h2`
 
 export const ContentComing = styled.h2`
 	/* position: absolute; */
-	margin-top: 50px;
-	width: 53%;
+	margin: auto;
+	width: 80%;
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-left: 2rem;
+	// margin-left: 2rem;
+	text-justify: auto;
 	color: ${props => props.theme.text};
 	a:link {
 		color: ${props => props.theme.text};
@@ -96,4 +96,27 @@ export const ContentComing = styled.h2`
 		background-color: transparent;
 		text-decoration: underline;
 	}
+`
+
+// export const layoutCarousel = styled.h1`
+// 	margin-top: 10rem;
+// `
+
+export const LayoutCarousel = styled.h1 `
+	margin-top: 10rem;
+`
+
+export const CarouselVideo = styled.div `
+	// position: absolute;
+	// margin-top: 100px;
+	// z-index: -1;
+	// /* margin-left: auto;
+	// margin-right: auto; */
+	// width: 110%;
+	// height: 480px;
+	// top: 0;
+	// // display: block;
+	// overflow: hidden;
+	video {
+		width:80%;
 `

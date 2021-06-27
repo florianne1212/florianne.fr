@@ -14,7 +14,7 @@ export const Nav = styled(motion.div)`
 `
 
 export const NavHeader = styled.div`
-	top: 72px;
+	top: 5rem;
 	position: relative;
 	h2 {
 		color: ${props => props.theme.text};
@@ -26,7 +26,7 @@ export const CloseNav = styled.div`
 	button {
 		transform-origin: center;
 		border: none;
-		padding: 20px;
+		padding: 5rem;
 		background: none;
 		outline: none;
 		span {
@@ -49,11 +49,11 @@ export const NavList = styled.div`
 		padding: 0;
 		li {
 			list-style: none;
-			font-size: 3rem;
+			font-size: clamp(1vw, 5vw, 3rem);
 			text-transform: uppercase;
 			font-weight: 900;
 			height: 7rem;
-			line-height: 7rem;
+			line-height: 4rem;
 			overflow: hidden;;
 			.link{
 				color: ${props => props.theme.text};
@@ -80,9 +80,9 @@ export const NavFooter = styled.div`
   position: absolute;
   z-index: 99999;
   bottom: 0;
-  left: 0;
+  left: 1.5rem;
   width: 100%;
-  padding: 56px 0px;
+  padding: 8rem 0px;
   p {
     color: ${props => props.theme.text};
   }

@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const Headline = styled.span `
-display: block;
-font-size: 5rem;
-font-weight: 400;
-line-height: 0.76;
+	display: block;
+	font-size: clamp(3rem, 5vw, 8rem);
+	font-weight: 400;
+	line-height: 0.76;
 `
 export const SmallerHeadline = styled.span `
 display: block;
@@ -45,10 +45,11 @@ export const MINISHELL = styled.h2`
 
 
 export const BannerTitle = styled.h1 `
-/* position: absolute; */
-margin-left: 2rem;
-color: ${props => props.theme.text};
-pointer-events: none;
+	/* position: absolute; */
+	margin-left: auto;
+	margin-right: auto;
+	color: ${props => props.theme.text};
+	pointer-events: none;
 `
 
 export const PreviewVideo  = styled.h2`

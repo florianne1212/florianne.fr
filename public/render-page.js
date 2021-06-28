@@ -15242,16 +15242,16 @@ const Nav = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.default)(framer_mo
 })(["position:fixed;top:0;width:100%;height:100%;display:block;background:", ";color:#000;z-index:100;"], props => props.theme.background);
 const NavHeader = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "navigationStyles__NavHeader"
-})(["top:72px;position:relative;h2{color:", ";}"], props => props.theme.text);
+})(["top:5rem;position:relative;h2{color:", ";}"], props => props.theme.text);
 const CloseNav = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "navigationStyles__CloseNav"
-})(["button{transform-origin:center;border:none;padding:20px;background:none;outline:none;span{width:36px;height:8px;display:block;background:", ";margin:8px;}}"], props => props.theme.text);
+})(["button{transform-origin:center;border:none;padding:5rem;background:none;outline:none;span{width:36px;height:8px;display:block;background:", ";margin:8px;}}"], props => props.theme.text);
 const NavList = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "navigationStyles__NavList"
-})(["height:100%;width:100%;display:flex;align-items:center;ul{padding:0;li{list-style:none;font-size:3rem;text-transform:uppercase;font-weight:900;height:7rem;line-height:7rem;overflow:hidden;;.link{color:", ";position:relative;display:flex;align-items:center;.arrow{height:76px;margin-right:8px;svg{width:100px;path{fill:", ";}}}}}}"], props => props.theme.text, props => props.theme.text);
+})(["height:100%;width:100%;display:flex;align-items:center;ul{padding:0;li{list-style:none;font-size:clamp(1vw,5vw,3rem);text-transform:uppercase;font-weight:900;height:7rem;line-height:4rem;overflow:hidden;;.link{color:", ";position:relative;display:flex;align-items:center;.arrow{height:76px;margin-right:8px;svg{width:100px;path{fill:", ";}}}}}}"], props => props.theme.text, props => props.theme.text);
 const NavFooter = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "navigationStyles__NavFooter"
-})(["position:absolute;z-index:99999;bottom:0;left:0;width:100%;padding:56px 0px;p{color:", ";}svg path{fill:", ";}"], props => props.theme.text, props => props.theme.text);
+})(["position:absolute;z-index:99999;bottom:0;left:1.5rem;width:100%;padding:8rem 0px;p{color:", ";}svg path{fill:", ";}"], props => props.theme.text, props => props.theme.text);
 const NavVideo = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "navigationStyles__NavVideo"
 })(["position:absolute;top:0;bottom:0;left:28%;z-index:-1;width:100%;height:100%;background:#000;.reveal{width:100%;background:", ";position:absolute;top:0;left:0;bottom:0;}.video{background:#000;position:absolute;height:100%;margin:0%;z-index:-1;video{height:100%;}}"], props => props.theme.background);

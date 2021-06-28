@@ -26,7 +26,7 @@ export const CloseNav = styled.div`
 	button {
 		transform-origin: center;
 		border: none;
-		padding: 5rem;
+		padding: 2rem;
 		background: none;
 		outline: none;
 		span {
@@ -82,7 +82,7 @@ export const NavFooter = styled.div`
   bottom: 0;
   left: 1.5rem;
   width: 100%;
-  padding: 8rem 0px;
+  padding: 4rem 0px;
   p {
     color: ${props => props.theme.text};
   }

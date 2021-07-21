@@ -21,6 +21,17 @@
   "page4" : "about me"
 },
 "Myprojects": {
+	"todo": {
+		"title" : "To Do List",
+		"description" : {  
+			"line1": "After my all the previous project I wanted to start building my own app to understand how react native works. ",
+			"line2": "I've decided to create a todo app because I could see how async storage works and learn the basics of making an app. ",
+			"line3": "This app was build on expo on can be found and downloaded on the Expo app",
+			"link" : "downloaded on the Expo app.",
+			"line4": "Here are some preview off the App."
+			
+		}
+	},
 	"draw": {
 		"title" : "collaborative drawing app",
 		"description" : {  

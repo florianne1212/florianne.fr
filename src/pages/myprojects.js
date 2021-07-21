@@ -18,7 +18,10 @@ import {
 	BannerTitle,
 	PreviewVideo,
 	LayoutCarousel,
-	CarouselVideo
+	CarouselVideo,
+	ContentHorizontal,
+	ContentComingHorizontal,
+	CarouselVideoHorizontal
 } from "../styles/projectsStyle"
 
 
@@ -38,6 +41,35 @@ const MyProjects = () => {
 		<Layout>
 			<LayoutCarousel>
 				<Carousel>
+					<div>
+						<BannerTitle>
+							<Headline>{t('Myprojects.todo.title')}</Headline>
+						</BannerTitle>
+						<ContentHorizontal>
+							<ContentComingHorizontal>
+								{t('Myprojects.todo.description.line1')}
+								{t('Myprojects.todo.description.line2')}
+								{t('Myprojects.todo.description.line3')}
+								&nbsp;
+								<a
+									href="http://draw.florianne.fr/"
+									onMouseEnter={() => onCursor("pointer")}
+									onMouseLeave={onCursor}
+									onClick={onCursor}
+								>
+									{t('Myprojects.todo.description.link')} <br />
+								</a>
+								{t('Myprojects.todo.description.line4')} <br /><br />
+							</ContentComingHorizontal>
+							<CarouselVideoHorizontal>
+								<video
+									loop
+									autoPlay
+									muted src={require('../assets/video/to_do_app.mp4').default}>
+								</video>
+							</CarouselVideoHorizontal>
+						</ContentHorizontal>
+					</div>
 					<div>
 						<BannerTitle>
 							<Headline>{t('Myprojects.draw.title')}</Headline>

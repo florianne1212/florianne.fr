@@ -29,7 +29,6 @@ const MyProjects = () => {
 				>
 					<FirstComponent />
           			<SecondComponent />
-					{/* <ThirdComponent /> */}
 				</ReactPageScroller>
 		</Layout>
 	</div>

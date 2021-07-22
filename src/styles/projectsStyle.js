@@ -13,24 +13,11 @@ font-weight: 400;
 line-height: 0.76;
 `
 
-export const CUB3D = styled.h2`
-	/* position:relative; */
-	display: flex;
-	margin-top: 100px;
-	width: 70%;
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin-left: 150px;
-	color: ${props => props.theme.text};
-	a{
-		align-self:center;
-	}
-`
 export const MINISHELL = styled.h2`
 	/* position:relative; */
 	/* display: inline-block; */
 	display: flex;
-	margin-top: 100px;
+	// margin-top: 100px;
 	width: 70%;
 	gap: 12px;
 	font-size: 1.5rem;
@@ -147,11 +134,11 @@ export const ContentComing = styled.h2`
 	}
 `
 
-// export const layoutCarousel = styled.h1`
+// export const LayoutProject = styled.h1`
 // 	margin-top: 10rem;
 // `
 
-export const LayoutCarousel = styled.h1 `
+export const LayoutProject = styled.h1 `
 	margin-top: 10rem;
 `
 

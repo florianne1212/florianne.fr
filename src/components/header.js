@@ -29,10 +29,10 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
 	return (
 		<HeaderNav
 			animate={{y: 0, opacity: 1}}
-			initial={{y: 72, opacity: 0}}
+			initial={{y: 80, opacity: 0}}
 		>
 			<Container>
-				<Flex spaceBetween noHeight>
+				<Flex spaceBetween >
 					<Logo
 						onMouseEnter={() => onCursor("hovered")}
 						onMouseLeave={onCursor}

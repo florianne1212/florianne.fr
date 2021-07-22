@@ -2,12 +2,13 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
 export const HeaderNav = styled(motion.div) `
-    height: 0px;
+    height: 100px;
     width: 100%;
     position: absolute;
-    top: 72px;
+    top: 0px;
     right: 0;
-    left: 0;
+	left: 0;
+	background-color: ${props => props.theme.background};
     z-index: 99;
 `
 

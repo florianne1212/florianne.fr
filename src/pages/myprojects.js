@@ -17,7 +17,7 @@ import {
 	Headline,
 	BannerTitle,
 	PreviewVideo,
-	LayoutCarousel,
+	LayoutProject,
 	CarouselVideo,
 	ContentHorizontal,
 	ContentComingHorizontal,
@@ -39,7 +39,7 @@ const MyProjects = () => {
 	return (
 	<div>
 		<Layout>
-			<LayoutCarousel>
+			<LayoutProject>
 				<Carousel>
 					<div>
 						<BannerTitle>
@@ -125,7 +125,7 @@ const MyProjects = () => {
 						</CarouselVideo>
 					</div>
 				</Carousel>
-			</LayoutCarousel>
+			</LayoutProject>
 			{/* <Title></Title> */}
 			
 			{/* <PreviewVideo>

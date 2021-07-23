@@ -14757,13 +14757,17 @@ const Layout = ({
   const translatedTitle = t(`site.${data.site.siteMetadata.title}`);
   const darkTheme = {
     background: "#000000",
+    first: '#111111',
+    second: '#232323',
     text: "#ffffff",
-    blue: '#11737E'
+    blue: '#b8dbd9'
   };
   const lightTheme = {
-    background: "#ffffff",
+    background: "#fff1eb",
+    first: '#ffeae1',
+    second: '#ffd5c2',
     text: "#000000",
-    blue: '#773344'
+    blue: '#588b8b'
   };
   const {
     currentTheme,

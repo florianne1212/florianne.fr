@@ -10,7 +10,7 @@ export const First = styled.div`
 	//z-index: 9;
 	top: 0;
 	height: 100vh;
-	background-color: #fff1f0;
+	background-color: ${props => props.theme.first};
     /* position: relative; */
 `
 
@@ -20,7 +20,7 @@ export const Second = styled.div`
 	//z-index: 9;
 	top: 0;
 	height: 100vh;
-	background-color: #f2ebfc;
+	background-color: ${props => props.theme.second};
     position: relative;
 `
 export const Third = styled.div`

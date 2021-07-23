@@ -14657,12 +14657,11 @@ const Header = ({
       opacity: 1
     },
     initial: {
-      y: 72,
+      y: 80,
       opacity: 0
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_3__.Container, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_3__.Flex, {
-    spaceBetween: true,
-    noHeight: true
+    spaceBetween: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_styles_headerStyles_js__WEBPACK_IMPORTED_MODULE_2__.Logo, {
     onMouseEnter: () => onCursor("hovered"),
     onMouseLeave: onCursor
@@ -15178,7 +15177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "globalStyles__Container"
-})(["flex-grow:1;margin:0 auto;padding:0 32px;position:relative;width:auto;height:100%;@media (min-width:1024px){max-width:960px}@media (min-width:1216px){max-width:1152px}@media (min-width:1408px){max-width:1244px}", ""], props => props.fluid && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["padding:0;margin:0;max-width 100%;"]));
+})(["flex-grow:1;margin:0 auto;padding:0 32px;position:relative;width:auto;height:100%;background-color:", ";@media (min-width:1024px){max-width:960px}@media (min-width:1216px){max-width:1152px}@media (min-width:1408px){max-width:1244px}", ""], props => props.theme.background, props => props.fluid && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["padding:0;margin:0;max-width 100%;"]));
 const Flex = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "globalStyles__Flex"
 })(["position:relative;display:flex;align-items:center;", " ", " ", " ", ""], props => props.spaceBetween && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["justify-content:space-between;"]), props => props.flexEnd && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["justify-content:flex-end;"]), props => props.alignTop && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["align-items:top;"]), props => props.noHeight && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["height:0;"]));
@@ -15207,7 +15206,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const HeaderNav = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.default)(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div).withConfig({
   displayName: "headerStyles__HeaderNav"
-})(["height:0px;width:100%;position:absolute;top:72px;right:0;left:0;z-index:99;"]);
+})(["height:100px;width:100%;position:absolute;top:0px;right:0;left:0;background-color:", ";z-index:99;"], props => props.theme.background);
 const Logo = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
   displayName: "headerStyles__Logo"
 })(["a{font-size:1.8rem;font-weight:800;color:", ";}span{height:1rem;width:1rem;background:", ";color:", ";margin:0 4px;border-radius:100%;display:inline-block;position:relative;bottom:2px;}"], props => props.theme.text, props => props.theme.blue, props => props.theme.blue);

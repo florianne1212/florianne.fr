@@ -26,7 +26,7 @@ import {
 
 
 const MyProjects = () => {
-
+	if (typeof window === "undefined") return (<div>test</div>)
 	const {currentTheme, cursorStyles} = useGlobalStateContext()
 	const dispatch = useGlobalDispatchContext()
 
@@ -35,6 +35,8 @@ const MyProjects = () => {
 		cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
 		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	}
+
+	
   
 	return (
 	<div>

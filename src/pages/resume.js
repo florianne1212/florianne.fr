@@ -19,24 +19,23 @@ import resume from '../assets/document/resume_en.pdf';
 import { Document, Page, pdfjs   } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function useMediaQuery() {
-	const [screenSize, setScreenSize] = useState([0, 0]);
+// function useMediaQuery() {
+// 	const [screenSize, setScreenSize] = useState([0, 0]);
 	
-	useLayoutEffect(() => {
-	  function updateScreenSize() {
-		setScreenSize([window.innerWidth, window.innerHeight]);
-	  }
-	  window.addEventListener("resize", updateScreenSize);
-	  updateScreenSize();
-	  return () => window.removeEventListener("resize", updateScreenSize);
-	}, []);
+// 	useLayoutEffect(() => {
+// 	  function updateScreenSize() {
+// 		setScreenSize([window.innerWidth, window.innerHeight]);
+// 	  }
+// 	  window.addEventListener("resize", updateScreenSize);
+// 	  updateScreenSize();
+// 	  return () => window.removeEventListener("resize", updateScreenSize);
+// 	}, []);
 	
-	return screenSize;
-}
+// 	return screenSize;
+// }
 
 function Resume () {
-
-	// const [width] = useMediaQuery();
+	if (typeof window === "undefined") return (<div>test</div>);
 
 	const {currentTheme, cursorStyles} = useGlobalStateContext()
 	const dispatch = useGlobalDispatchContext()
@@ -109,6 +108,8 @@ function Resume () {
 	// window.onload = () => {
 	// 	load();
 	// }
+
+	
 
 
 

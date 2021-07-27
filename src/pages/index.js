@@ -18,6 +18,7 @@ import { useTranslation } from "react-i18next"
     
 
 const IndexPage = props => {
+	const windowGlobal = typeof window !== 'undefined' && window;
 
 	const { t } = useTranslation()
 	const [isClient, setClient] = useState(false);

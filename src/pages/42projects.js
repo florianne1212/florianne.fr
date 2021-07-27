@@ -18,7 +18,8 @@ const MyProjects = () => {
 	// 	cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
 	// 	dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	// }
-  
+	if (typeof window === "undefined") return (<div>test</div>);
+
 	return (
 	<div>
 		<Layout>

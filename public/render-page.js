@@ -14765,7 +14765,7 @@ const Layout = ({
   const lightTheme = {
     background: "#fff1eb",
     first: '#ffeae1',
-    second: '#ffd5c2',
+    second: '#ffe4db',
     text: "#000000",
     blue: '#588b8b'
   };

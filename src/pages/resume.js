@@ -34,9 +34,9 @@ function useMediaQuery() {
 	return screenSize;
 }
 
-function Resume() {
+const Resume= () => {
 
-	const [width] = useMediaQuery();
+	// const [width] = useMediaQuery();
 
 	const {currentTheme, cursorStyles} = useGlobalStateContext()
 	const dispatch = useGlobalDispatchContext()
@@ -45,35 +45,34 @@ function Resume() {
 		cursorType = (cursorStyles.includes(cursorType) && cursorType || false)
 		dispatch({type: 'CURSOR_TYPE', cursorType: cursorType})
 	}
-
+	
 	const load = () => {
-		console.log("POUET POUET");
-		console.log(width);
-		if(width < 700)
-			return(0.45)
+		console.log(window.innerWidth);
+		if(window.innerWidth < 700)
+			return(0.40)
+		else if(window.innerWidth < 1000)
+			return(0.70)
 		else
-			return(3)
+			return(1)
 	}
-	
-	const [scale, setScale] = useState(load);
-	
 
-	// load {
-	// 	if(width < 700)
-	// 		setScale(0.45)
-	// 	else
-	// 		setScale(1)
-	// }
+
+	const [scale, setScale] = useState(load);
+	//window.addEventListener("resize", setScale(5));
+
+
 
 	const zoom_in = () => {
-		if(width < 700)
+		console.log(scale);
+		if(window.innerWidth < 700)
 			setScale(scale * 1.05)
 		else
 			setScale(scale * 1.15)
 	}
 
 	const zoom_out = () => {
-		if(width < 700)
+		console.log(scale);
+		if(window.innerWidth < 700)
 			setScale(scale * 0.95)
 		else
 			setScale(scale * 0.85)

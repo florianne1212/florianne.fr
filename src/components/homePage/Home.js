@@ -7,7 +7,7 @@ import {useInView} from 'react-intersection-observer'
 import {useAnimation} from 'framer-motion'
 
 //styled components
-import {Container, Flex} from '../../styles/globalStyles'
+import {ContainerHome, Flex} from '../../styles/globalStyles'
 import {
 	HomeFeaturedSection,
 	FeaturedContent,
@@ -32,7 +32,7 @@ const Home = ({onCursor}) => {
 
 	return(
 		<HomeFeaturedSection>
-			<Container>
+			<ContainerHome>
 				<Link to={`/myprojects`}>
 					<FeaturedContent 
 						onHoverStart={() => setHovered(!hovered)}
@@ -71,7 +71,7 @@ const Home = ({onCursor}) => {
 					</FeaturedContent>
 					
 				</Link>
-			</Container>
+			</ContainerHome>
 			<FeaturedVideo>
 				<video
 					loop

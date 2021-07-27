@@ -27,6 +27,33 @@ export const Container = styled.div `
 	`}
 
 `
+export const ContainerHome = styled.div `
+	flex-grow: 1;
+	margin: 0 auto;
+	padding: 0 32px;
+	position: relative;
+	width: auto;
+	height: 100%;
+	//background-color: ${props => props.theme.background};
+	@media (min-width: 1024px) {
+		max-width: 960px
+	}
+	@media (min-width: 1216px) {
+		max-width: 1152px
+	}
+	@media (min-width: 1408px) {
+		max-width: 1244px
+	} 
+
+	${props => 
+		props.fluid && 
+		css `
+		padding: 0;
+		margin: 0;
+		max-width 100%;
+	`}
+
+`
 
 export const Flex = styled.div `
 	position: relative;

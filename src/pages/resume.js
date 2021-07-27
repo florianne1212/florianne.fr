@@ -1,4 +1,4 @@
-import React, {useLayoutEffect, useState} from 'react'
+import React, {useEffect, useLayoutEffect, useState} from 'react'
 
 //styled Component
 import {
@@ -34,7 +34,7 @@ function useMediaQuery() {
 	return screenSize;
 }
 
-const Resume= () => {
+function Resume () {
 
 	// const [width] = useMediaQuery();
 
@@ -58,16 +58,44 @@ const Resume= () => {
 
 
 	const [scale, setScale] = useState(load);
-	//window.addEventListener("resize", setScale(5));
+	//
 
 
+	useEffect (() => {
+	
+		function handleResize() {
+			console.log(window.innerWidth);
+			if(window.innerWidth < 700)
+				setScale(0.40)
+			else if(window.innerWidth < 1000)
+				setScale(0.70)
+			else
+				setScale(1)
+		}
+	
+		window.addEventListener("resize", handleResize)
+	
+		return () => window.removeEventListener("resize", handleResize)
+	
+	},[]);
 
 	const zoom_in = () => {
 		console.log(scale);
 		if(window.innerWidth < 700)
-			setScale(scale * 1.05)
+		{
+			if(scale < 0.8)
+				setScale(scale * 1.05)
+		}
+		else if(window.innerWidth < 1000)
+		{	
+			if(scale < 1)
+				setScale(scale * 1.15)
+		}
 		else
+		{
+			if(scale < 1.5)
 			setScale(scale * 1.15)
+		}
 	}
 
 	const zoom_out = () => {
